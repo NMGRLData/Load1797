@@ -1,0 +1,2633 @@
+do run
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_diode.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=624.242112, duration=0.000288963317871
+script duration name:analysis400_120 seconds:624.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_diode.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=2.69412994385e-05
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_diode.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=9.08374786377e-05
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=2.50339508057e-05
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=42.0, duration=0.000137805938721
+executed snippet estimated_duration=42.0, duration=0.00366401672363
+script duration name:diode seconds:42.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_diode.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=4.0, duration=0.000205039978027
+executed snippet estimated_duration=4.0, duration=0.00144910812378
+Script duration 666.0
+Run total estimated duration= 667.000
+run duration: 0:11:07
+doing event level: 2
+04:13:57 -- Setting default integration. t=1.048576
+setting integration time = 1.048576
+SetIntegrationTime 1.048576 ===>> OK
+----------------- start -----------------
+**************** Experiment Type: Ar/Ar, Ar/Ar
+create new session 4701426704
+close session 4701426704
+$$$$$ Clearing conditionals
+adding conditionals 
+Add queue conditionals
+add default conditionals
+adding default conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
+Start automated run 65495-08A
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_diode.py"
+loading script "felix_pump_extraction_line.py"
+%%%%%%%%%%%%%%%%%% setting automated run 65495-08A
+No value "sensitivity_multiplier" in metadata
+$$$$$$$$$$$$$$$ auto_save_detector_ic=False
+============================= Pre Extraction Check =============================
+loading queue conditionals pre_run_terminations
+loading system conditionals pre_run_terminations
+loading conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
+04:13:57 -- ******* Pre Extraction Check *******
+Get a measurement from the spectrometer
+GetData ===>> L2(CDD),0,H2,0.0536665693345817,H1,-0.0191896594042794,AX,-0.307004699833776,L1,-0.40082432304768...
+Pre Extraction Termination data. keys=L2(CDD),H2,H1,AX,L1,L2, signals=0.00000,0.05367,-0.01919,-0.30700,-0.40082,-0.49468
+04:13:57 -- testing system defined conditionals
+Checking default pre extraction terminations n=2
+testing L2_CDD_
+evaluate ot="L2(CDD).inactive" t="L2_CDD_", ctx="{'L2_CDD_': False}"
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+04:13:57 -- ******* Pre Extraction Check Passed *******
+=================================================================================
+04:13:57 -- stopping status monitor
+stop 4709591184
+Alive clients [4674599152]
+04:13:57 -- starting status monitor
+start 4709591184
+Monitor already running
+start extraction
+do extraction
+Analysis started at 04:13:57.283765
+Extraction Started felix_diode.py
+04:13:57 -- ******* Extraction Started felix_diode.py *******
+state changed from not run to extraction
+DO EXTRACTION <pychron.extraction_line.pyscript_runner.RemotePyScriptRunner object at 0x11963dfb0>
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=0.000124931335449
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=3.19480895996e-05
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=42.0, duration=0.000107049942017
+executed snippet estimated_duration=204.0, duration=0.00563597679138
+Felix unknown laser analysis
+set_motor ('beam', '') {}
+setting motor "beam" to 
+doing GOSUB
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=9.17911529541e-05
+Prepare for Diode Analysis
+close () {'description': 'Felix Inlet'}
+close name=--- desc=Felix Inlet
+checking ownership. requestor=129.138.12.137
+check software interlocks H
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+Close H ===>> OK
+GetIndicatorState H ===>> False
+change switch state (True, True)
+update switch state H False args=() kw={} ncanvase=2
+04:13:57 -- CLOSE  VALVE-H (Felix Inlet)
+-------------------------- close None (Felix Inlet) result=[(True, True)]
+action=close, ok=True, locked=[False]
+open () {'description': 'Felix Ion Pump'}
+open name=--- desc=Felix Ion Pump
+checking ownership. requestor=129.138.12.137
+check software interlocks V
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open V ===>> OK
+GetIndicatorState V ===>> OK
+change switch state (True, True)
+update switch state V True args=() kw={} ncanvase=2
+04:13:57 -- OPEN   VALVE-V (Felix Ion Pump)
+-------------------------- open None (Felix Ion Pump) result=[(True, True)]
+action=open, ok=True, locked=[False]
+close () {'description': 'Bone to Minibone'}
+close name=--- desc=Bone to Minibone
+checking ownership. requestor=129.138.12.137
+check software interlocks E
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+Close E ===>> OK
+GetIndicatorState E ===>> False
+change switch state (True, True)
+update switch state E False args=() kw={} ncanvase=2
+04:13:58 -- CLOSE  VALVE-E (Bone to Minibone)
+-------------------------- close None (Bone to Minibone) result=[(True, True)]
+action=close, ok=True, locked=[False]
+open () {'description': 'Bone to Getter GP-50'}
+open name=--- desc=Bone to Getter GP-50
+checking ownership. requestor=129.138.12.137
+check software interlocks N
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open N ===>> OK
+GetIndicatorState N ===>> OK
+change switch state (True, True)
+update switch state N True args=() kw={} ncanvase=2
+04:13:58 -- OPEN   VALVE-N (Bone to Getter GP-50)
+-------------------------- open None (Bone to Getter GP-50) result=[(True, True)]
+action=open, ok=True, locked=[False]
+close () {'description': 'Bone to CO2 Laser'}
+close name=--- desc=Bone to CO2 Laser
+checking ownership. requestor=129.138.12.137
+check software interlocks D
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close D ===>> OK
+GetIndicatorState D ===>> False
+change switch state (True, True)
+update switch state D False args=() kw={} ncanvase=2
+04:13:59 -- CLOSE  VALVE-D (Bone to CO2 Laser)
+-------------------------- close None (Bone to CO2 Laser) result=[(True, True)]
+action=close, ok=True, locked=[False]
+open () {'description': 'Bone to Diode Laser'}
+open name=--- desc=Bone to Diode Laser
+checking ownership. requestor=129.138.12.137
+check software interlocks B
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open B ===>> OK
+GetIndicatorState B ===>> OK
+change switch state (True, True)
+update switch state B True args=() kw={} ncanvase=2
+04:13:59 -- OPEN   VALVE-B (Bone to Diode Laser)
+-------------------------- open None (Bone to Diode Laser) result=[(True, True)]
+action=open, ok=True, locked=[False]
+executed snippet estimated_duration=0, duration=2.52265501022
+PrepareForDiodeAnalysis.py completed successfully
+gosub finished
+doing GOSUB
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=4.48226928711e-05
+Isolate coldfinger
+close () {'name': 'B', 'description': 'Bone to Diode Laser'}
+close name=B desc=Bone to Diode Laser
+checking ownership. requestor=129.138.12.137
+check software interlocks B
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close B ===>> OK
+GetIndicatorState B ===>> False
+change switch state (True, True)
+update switch state B False args=() kw={} ncanvase=2
+04:13:59 -- CLOSE  VALVE-B (Bone to Diode Laser)
+-------------------------- close B (Bone to Diode Laser) result=[(True, True)]
+action=close, ok=True, locked=[False]
+executed snippet estimated_duration=0, duration=0.415471792221
+IsolateDiodeColdfinger.py completed successfully
+gosub finished
+open () {'description': 'Bone to Turbo'}
+open name=--- desc=Bone to Turbo
+checking ownership. requestor=129.138.12.137
+check software interlocks C
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open C ===>> OK
+GetIndicatorState C ===>> OK
+change switch state (True, True)
+update switch state C True args=() kw={} ncanvase=2
+04:14:00 -- OPEN   VALVE-C (Bone to Turbo)
+-------------------------- open None (Bone to Turbo) result=[(True, True)]
+action=open, ok=True, locked=[False]
+Diodelaser enabled. Heating sample.
+enable () {}
+set extraction state FusionsDiode Enabled (False, 'red', 1.5)
+enabling laser
+Enable ===>> OK
+move_to_position ('7',) {}
+FusionsDiode move to position 7
+sending GoToHole 7,True
+GoToHole 7,True ===>> OK
+GetDriveMoving ===>> OK
+GetDriveMoving ===>> OK
+GetDriveMoving ===>> OK
+GetDriveMoving ===>> OK
+GetDriveMoving ===>> False
+GetDriveMoving ===>> False
+Block completed
+GetAutoCorrecting ===>> False
+GetAutoCorrecting ===>> False
+Block completed
+update position
+GetPosition ===>> 0.00000,11.16330,9.00000
+got position (0.0, 11.1633, 9.0)
+move to position succeeded
+BEGIN INTERVAL Interval 1 waiting for 40.0
+block started
+set extract to 0.5 (watts)
+WaitControl setup for 40.0  
+extract () {}
+GetPosition ===>> 0.00000,11.16330,9.00000
+set extraction state FusionsDiode ON! 0.5(watts) (0.75, 'red', 1.5)
+extract sample to 0.5 (watts)
+set laser output
+SetLaserOutput 0.5,watts ===>> OK
+sleep (2,) {}
+SLEEP 2.0
+block started
+WaitControl setup for 2.0  
+Join finished
+block finished. duration 2.02022600174
+COMPLETE INTERVAL waiting for Interval 1 to complete
+Join finished
+block finished. duration 40.1049370766
+Interval 1 finished
+Diode laser disabled.
+disable () {}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% disable
+set extraction state False (0.75, 'red', 1.5)
+disabling laser
+Disable ===>> OK
+doing GOSUB
+testing...
+no interpolation path defined
+executed snippet estimated_duration=42.0, duration=0.000169992446899
+Equilibrate then isolate coldfinger
+close () {'name': 'C', 'description': 'Bone to Turbo'}
+close name=C desc=Bone to Turbo
+checking ownership. requestor=129.138.12.137
+check software interlocks C
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close C ===>> OK
+GetIndicatorState C ===>> False
+change switch state (True, True)
+update switch state C False args=() kw={} ncanvase=2
+04:14:44 -- CLOSE  VALVE-C (Bone to Turbo)
+-------------------------- close C (Bone to Turbo) result=[(True, True)]
+action=close, ok=True, locked=[False]
+sleep (1,) {}
+SLEEP 1.0
+open () {'name': 'B', 'description': 'Bone to Diode Laser'}
+open name=B desc=Bone to Diode Laser
+checking ownership. requestor=129.138.12.137
+check software interlocks B
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open B ===>> OK
+GetIndicatorState B ===>> OK
+change switch state (True, True)
+update switch state B True args=() kw={} ncanvase=2
+04:14:46 -- OPEN   VALVE-B (Bone to Diode Laser)
+-------------------------- open B (Bone to Diode Laser) result=[(True, True)]
+action=open, ok=True, locked=[False]
+sleep (20,) {}
+SLEEP 20.0
+block started
+WaitControl setup for 20.0  
+Join finished
+block finished. duration 20.1033239365
+close () {'name': 'B', 'description': 'Bone to Diode Laser'}
+close name=B desc=Bone to Diode Laser
+checking ownership. requestor=129.138.12.137
+check software interlocks B
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close B ===>> OK
+GetIndicatorState B ===>> False
+change switch state (True, True)
+update switch state B False args=() kw={} ncanvase=2
+04:15:06 -- CLOSE  VALVE-B (Bone to Diode Laser)
+-------------------------- close B (Bone to Diode Laser) result=[(True, True)]
+action=close, ok=True, locked=[False]
+executed snippet estimated_duration=63.0, duration=22.2962610722
+EquilibrateThenIsolateDiodeColdfinger.py completed successfully
+gosub finished
+sleep (60.0,) {}
+SLEEP 60.0
+block started
+WaitControl setup for 60.0  
+Join finished
+block finished. duration 60.1749351025
+executed snippet estimated_duration=344.0, duration=129.766030073
+felix_diode.py completed successfully
+GetAchievedOutput ===>> No Response
+Requested Output= 0.000
+Achieved Output=  0.000
+GetResponseBlob ===>> [[19][178]N[00][00][00][00][128][247][185]=[00][00][250]Dc&[06]@[00][00][250]Dv&[131]@[00][00][25...
+GetOutputBlob ===>> [[19][178]N[00][00][00][00][128][247][185]=[169][176][229]Ac&[06]@[00][00][00][00]v&[131]@[00][00...
+persistence save...
+persistence save - db
+AutomatedRunPersister post_extraction_save deprecated
+persistence save - dvc
+no extraction position for 7
+create new session 4673147248
+close session 4673147248
+Extraction Finished
+04:16:07 -- ******* Extraction Finished *******
+no overlap. not waiting for min ms pumptime
+04:16:07 -- Sending spectrometer configuration
+======== Sending configuration ========
+SetZFocus 9.84 ===>> OK
+SetHV 9000.0 ===>> OK
+SetZSymmetry 18.34 ===>> OK
+SetExtractionLens 42.35 ===>> OK
+SetIonRepeller -4.08 ===>> OK
+SetElectronEnergy 107.0 ===>> OK
+SetYSymmetry 12.72 ===>> OK
+send trap current 400.0
+GetParameter Trap Current Readback ===>> 398.979307819081
+SetParameter Trap Current Set,400.0 ===>> OK
+updating mftable name argon
+Using mftable located at /Users/obama/PychronDev/setupfiles/spectrometer/mftables/argon.csv
+============ MFtable ===========
+Isotope  H2     H1     AX     L1     L2     L2(CDD)
+Ar40     3.4924 3.5636 3.6379 3.7149 3.8107 3.7973
+Ar39     3.4234 3.4937 3.5665 3.6448 3.7359 3.7221
+Ar36     3.2133 3.2796 3.3480 3.4197 3.5165 3.4938
+================================
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+======== Configuration Finished ========
+GetYSymmetry ===>> 12.72
+GetZSymmetry ===>> 18.34
+GetParameter Trap Current Readback ===>> 397.860465116279
+GetHighVoltage ===>> 9000
+start measurement
+do measurement
+L#=65495 analysis type=unknown
+Measurement Started felix_analysis400_120.py
+04:16:07 -- ******* Measurement Started felix_analysis400_120.py *******
+state changed from extraction to measurement
+setting spec, defl, and gains
+GetExtractionLens ===>> 42.35
+GetYSymmetry ===>> 12.72
+GetZSymmetry ===>> 18.34
+GetZFocus ===>> 9.84
+GetDeflection H2 (CDD) ===>> 3250
+GetDeflection H1 (CDD) ===>> 3250
+GetDeflection AX (CDD) ===>> 3250
+GetDeflection L1 (CDD) ===>> 3250
+GetDeflection L2 (CDD) ===>> 0
+GetGain H2 ===>> 0.9809305
+GetGain H1 ===>> 0.96484
+GetGain AX ===>> 0.96253
+GetGain L1 ===>> 0.970094835296087
+GetGain L2 ===>> 0.967359864778375
+GetGain H2(CDD) ===>> 0
+GetGain H1(CDD) ===>> 0
+GetGain AX(CDD) ===>> 0
+GetGain L1(CDD) ===>> 0
+GetGain L2(CDD) ===>> 0
+pre measurement save
+New frame /Users/obama/PychronDev/data/isotopes/83/3fdba0-cbb5-4ca9-861b-58a6a50b0c5f.h5
+flush and close file /Users/obama/PychronDev/data/isotopes/83/3fdba0-cbb5-4ca9-861b-58a6a50b0c5f.h5
+testing...
+no interpolation path defined
+executed snippet estimated_duration=650.242112, duration=0.000218868255615
+unknown measurement script
+activate_detectors ('H2', 'H1', 'AX', 'L1', 'L2(CDD)') {}
+activate detectors
+*************** Set Analysis View Ar/Ar
+create graphs
+clearing graphs
+clear isotope group
+setting isotope det=H2, iso=Ar40
+setting isotope det=H1, iso=Ar39
+setting isotope det=AX, iso=Ar38
+setting isotope det=L1, iso=Ar37
+setting isotope det=L2(CDD), iso=Ar36
+setting previous blanks
+ - setting Ar40 blank 0.451+/-0.020
+ - setting Ar36 blank 0.00154+/-0.00014
+ - setting Ar37 blank -0.001+/-0.012
+ - setting Ar38 blank -0.009+/-0.013
+ - setting Ar39 blank -0.042+/-0.023
+load analysis view
+position_magnet ('Ar40',) {'detector': 'H2'}
+detector Detector(H2)
+POSITION Ar40 H2
+setting detector H2 to Ar40 (39.9624)
+setting detector H1 to Ar39 (38.8624)
+setting detector AX to Ar38 (37.9624)
+setting detector L1 to Ar37 (36.9624)
+setting detector L2 to Ar36 (35.8624)
+setting detector H2(CDD) to Ar40 (39.8624)
+setting detector H1(CDD) to Ar39 (38.8624)
+setting detector AX(CDD) to Ar38 (37.8624)
+setting detector L1(CDD) to Ar37 (36.8624)
+setting detector L2(CDD) to Ar36 (35.9624)
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [ -2.38925034e-04   8.80081338e-02   3.56995459e-01]
+H2 map mass to dac 39.9624 >> 3.49245
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.49245) on H2
+setting magnet DAC
+current  : 3.485529
+requested: 3.492450
+Delta Dac: 0.006921
+Checking detector protection. dv=0.00692
+SetMagnetDAC 3.49245 ===>> OK
+Magnet settling time: 0.500
+update labels <pychron.experiment.plot_panel.PlotPanel object at 0x13d3f3e90>
+update labels "<pychron.graph.stacked_regression_graph.StackedRegressionGraph object at 0x1244bfb90>"
+setting label 0 H2 Ar40
+setting label 1 H1 Ar39
+setting label 2 AX Ar38
+setting label 3 L1 Ar37
+setting label 4 L2(CDD) Ar36
+update labels "<pychron.graph.stacked_graph.StackedGraph object at 0x12df24c50>"
+setting label 0 H2 Ar40
+setting label 1 H1 Ar39
+setting label 2 AX Ar38
+setting label 3 L1 Ar37
+equilibrate () {'delay': 3, 'inlet': 'H', 'outlet': 'V', 'eqtime': 25.0}
+setting label 4 L2(CDD) Ar36
+Equilibration Started
+04:16:08 -- ******* Equilibration Started *******
+checking ownership. requestor=129.138.12.137
+check software interlocks V
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close V ===>> OK
+GetIndicatorState V ===>> False
+change switch state (True, True)
+update switch state V False args=() kw={} ncanvase=2
+04:16:08 -- CLOSE  VALVE-V (Felix Ion Pump)
+waiting 3s before opening inlet value ('H',)
+checking ownership. requestor=129.138.12.137
+check software interlocks H
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open H ===>> OK
+GetIndicatorState H ===>> OK
+change switch state (True, True)
+update switch state H True args=() kw={} ncanvase=2
+04:16:11 -- OPEN   VALVE-H (Felix Inlet)
+set_time_zero () {}
+equilibrating for 25.0sec
+sniff (25.0,) {}
+py_sniff
+build tables- sniff [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2(CDD))]
+add group /sniff/Ar40 (Group) u'' table H2
+add group /sniff/Ar39 (Group) u'' table H1
+add group /sniff/Ar38 (Group) u'' table AX
+add group /sniff/Ar37 (Group) u'' table L1
+add group /sniff/Ar36 (Group) u'' table L2(CDD)
+flush and close file /Users/obama/PychronDev/data/isotopes/83/3fdba0-cbb5-4ca9-861b-58a6a50b0c5f.h5
+measuring sniff. ncounts=25.0
+"sniff" increment series count="1" fit count="0" regressing="False"
+starting measurement
+check iteration duration=1.90734863281e-05
+GetData ===>> L2(CDD),0.000786223551241894,H2,0.160092949331872,H1,0.17480570455877,AX,-0.176660222230791,L1,-0...
+check iteration duration=3.19480895996e-05
+GetData ===>> L2(CDD),0.0539352833272816,H2,8.94183470707245,H1,0.109063568805915,AX,-0.221256757794357,L1,-0.5...
+check iteration duration=3.09944152832e-05
+GetData ===>> L2(CDD),0.110701751931377,H2,33.9882937531773,H1,0.913678340960731,AX,-0.230657306172765,L1,-0.44...
+check iteration duration=3.50475311279e-05
+GetData ===>> L2(CDD),0.101895821917077,H2,35.3482599345361,H1,1.05827656449094,AX,-0.246018980264792,L1,-0.495...
+check iteration duration=2.59876251221e-05
+GetData ===>> L2(CDD),0.0814535569072311,H2,30.4908834728686,H1,0.698604121259375,AX,-0.0634972693874863,L1,-0....
+check iteration duration=3.09944152832e-05
+GetData ===>> L2(CDD),0.0665150427407458,H2,26.2146157779161,H1,0.461502973820658,AX,-0.092620516705798,L1,-0.3...
+check iteration duration=3.21865081787e-05
+GetData ===>> L2(CDD),0.0649425707145723,H2,22.8446053263817,H1,0.551300191246518,AX,-0.0900980655794262,L1,-0....
+check iteration duration=3.19480895996e-05
+GetData ===>> L2(CDD),0.0630556050749729,H2,20.69572870233,H1,0.481278339981005,AX,-0.191220243847047,L1,-0.379...
+check iteration duration=3.19480895996e-05
+GetData ===>> L2(CDD),0.0564512321387231,H2,19.4808693809007,H1,0.0913645284941869,AX,-0.223320300670896,L1,-0....
+check iteration duration=3.31401824951e-05
+GetData ===>> L2(CDD),0.0534635430960944,H2,18.3855824986986,H1,0.368725126890426,AX,-0.0437755148196208,L1,-0....
+check iteration duration=4.19616699219e-05
+GetData ===>> L2(CDD),0.0531490496386289,H2,17.7379977115522,H1,0.480703468965497,AX,-0.303680389910031,L1,-0.4...
+check iteration duration=3.40938568115e-05
+GetData ===>> L2(CDD),0.0498468697838842,H2,17.3491103651458,H1,0.335846890997431,AX,0.126054688305868,L1,-0.49...
+check iteration duration=3.2901763916e-05
+GetData ===>> L2(CDD),0.0492178834448112,H2,17.0415832232674,H1,0.544631224569792,AX,-0.190303083632559,L1,-0.3...
+check iteration duration=3.2901763916e-05
+GetData ===>> L2(CDD),0.0478026645328102,H2,16.6229594263151,H1,0.609023173679197,AX,-0.0931938001311785,L1,-0....
+check iteration duration=3.2901763916e-05
+GetData ===>> L2(CDD),0.0448149817586345,H2,16.7225148949515,H1,0.264001498709808,AX,-0.0492793009360073,L1,-0....
+check iteration duration=4.50611114502e-05
+GetData ===>> L2(CDD),0.0529918029188939,H2,16.6531658680089,H1,0.438968748326197,AX,-0.21598323922811,L1,-0.45...
+check iteration duration=4.50611114502e-05
+GetData ===>> L2(CDD),0.0518910760487078,H2,16.397321888708,H1,0.334007582223284,AX,-0.0821866987048322,L1,-0.5...
+check iteration duration=3.00407409668e-05
+GetData ===>> L2(CDD),0.0504758562189335,H2,16.1786672567197,H1,0.309522118221279,AX,-0.240516319226084,L1,-0.2...
+check iteration duration=3.09944152832e-05
+GetData ===>> L2(CDD),0.0454439674258741,H2,16.3388055817155,H1,0.408272461400678,AX,-0.0393036654236015,L1,-0....
+check iteration duration=3.00407409668e-05
+GetData ===>> L2(CDD),0.0484316506559366,H2,16.6147321511108,H1,0.271703068732884,AX,-0.151666915590343,L1,-0.4...
+check iteration duration=3.09944152832e-05
+GetData ===>> L2(CDD),0.0492178834448112,H2,16.4066049150946,H1,0.337571246158329,AX,0.0800679946888976,L1,-0.5...
+check iteration duration=3.09944152832e-05
+GetData ===>> L2(CDD),0.0468591855280759,H2,16.4128328172098,H1,0.0650464261475115,AX,-0.0569616164267061,L1,-0...
+check iteration duration=3.09944152832e-05
+GetData ===>> L2(CDD),0.0456012138576803,H2,16.3895665159277,H1,0.6097131106871,AX,0.00748000481017586,L1,-0.31...
+check iteration duration=3.40938568115e-05
+GetData ===>> L2(CDD),0.0418273011499198,H2,16.3825162299526,H1,0.390338004175913,AX,0.0831642866147273,L1,-0.5...
+Equilibration Finished
+04:16:37 -- ******* Equilibration Finished *******
+checking ownership. requestor=129.138.12.137
+check software interlocks H
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close H ===>> OK
+GetIndicatorState H ===>> False
+change switch state (True, True)
+update switch state H False args=() kw={} ncanvase=2
+04:16:37 -- CLOSE  VALVE-H (Felix Inlet)
+Post Equilibration Started felix_pump_extraction_line.py
+04:16:37 -- ******* Post Equilibration Started felix_pump_extraction_line.py *******
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=4.0, duration=0.000260829925537
+executed snippet estimated_duration=4.0, duration=0.0238571166992
+Pump after analysis
+doing GOSUB
+testing...
+no interpolation path defined
+executed snippet estimated_duration=4.0, duration=0.000216007232666
+Pump Bone
+close () {'description': 'Felix Inlet'}
+close name=--- desc=Felix Inlet
+checking ownership. requestor=129.138.12.137
+check software interlocks H
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+Close H ===>> OK
+GetIndicatorState H ===>> False
+change switch state (True, True)
+update switch state H False args=() kw={} ncanvase=2
+04:16:37 -- CLOSE  VALVE-H (Felix Inlet)
+-------------------------- close None (Felix Inlet) result=[(True, True)]
+action=close, ok=True, locked=[False]
+is_closed ('A',) {}
+is A () closed?
+is closed False
+close () {'description': 'CO2 Laser to Bone'}
+close name=--- desc=CO2 Laser to Bone
+checking ownership. requestor=129.138.12.137
+check software interlocks F
+interlocks []
+actuate state mode=None-script, software_lock=True
+VALVE-F(CO2 Laser to Bone) software locked
+change switch state (True, False)
+-------------------------- close None (CO2 Laser to Bone) result=[(True, False)]
+action=close, ok=True, locked=[True]
+sleep (1,) {}
+SLEEP 1.0
+check iteration duration=3.09944152832e-05
+04:16:37 -- collecting point 25
+GetData ===>> L2(CDD),0.046544692574486,H2,16.4368047319585,H1,0.208023277562771,AX,-0.223434941812167,L1,-0.52...
+close () {'description': 'CO2 Laser to Roughing'}
+close name=--- desc=CO2 Laser to Roughing
+checking ownership. requestor=129.138.12.137
+check software interlocks G
+interlocks []
+actuate state mode=None-script, software_lock=True
+VALVE-G(CO2 Laser to Roughing) software locked
+change switch state (True, False)
+-------------------------- close None (CO2 Laser to Roughing) result=[(True, False)]
+action=close, ok=True, locked=[True]
+open () {'description': 'Bone to Turbo'}
+open name=--- desc=Bone to Turbo
+checking ownership. requestor=129.138.12.137
+check software interlocks C
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open C ===>> OK
+check iteration duration=2.88486480713e-05
+waiting for write to finish
+GetIndicatorState C ===>> OK
+measurement finished
+change switch state (True, True)
+estimated time: 26.214 actual time: :26.376
+update switch state C True args=() kw={} ncanvase=2
+flush and close file /Users/obama/PychronDev/data/isotopes/83/3fdba0-cbb5-4ca9-861b-58a6a50b0c5f.h5
+set_fits () {}
+using default fits file=/Users/obama/PychronDev/scripts/measurement/fits/nominal.yaml
+set "Ar40" to "('Parabolic', 'SEM')"
+set "Ar36" to "('Parabolic', 'SEM')"
+set "Ar37" to "('linear', 'SEM')"
+set "Ar38" to "('linear', 'SEM')"
+set "Ar39" to "('Parabolic', 'SEM')"
+04:16:38 -- OPEN   VALVE-C (Bone to Turbo)
+set_baseline_fits () {}
+-------------------------- open None (Bone to Turbo) result=[(True, True)]
+using default fits file=/Users/obama/PychronDev/scripts/measurement/fits/nominal.yaml
+set "H2" to "('average', 'SEM')"
+set "L2(CDD)" to "('average', 'SEM')"
+set "L1" to "('average', 'SEM')"
+set "AX" to "('average', 'SEM')"
+set "H1" to "('average', 'SEM')"
+multicollect () {'integration_time': 1.048576, 'ncounts': 400}
+build tables- signal [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2(CDD))]
+add group /signal/Ar40 (Group) u'' table H2
+add group /signal/Ar39 (Group) u'' table H1
+add group /signal/Ar38 (Group) u'' table AX
+add group /signal/Ar37 (Group) u'' table L1
+add group /signal/Ar36 (Group) u'' table L2(CDD)
+flush and close file /Users/obama/PychronDev/data/isotopes/83/3fdba0-cbb5-4ca9-861b-58a6a50b0c5f.h5
+measuring signal. ncounts=400
+"signal" increment series count="2" fit count="1" regressing="True"
+action=open, ok=True, locked=[False]
+open () {'description': 'Bone to Getter GP-50'}
+open name=--- desc=Bone to Getter GP-50
+checking ownership. requestor=129.138.12.137
+check software interlocks N
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open N ===>> OK
+GetIndicatorState N ===>> OK
+change switch state (True, True)
+update switch state N True args=() kw={} ncanvase=2
+04:16:39 -- OPEN   VALVE-N (Bone to Getter GP-50)
+-------------------------- open None (Bone to Getter GP-50) result=[(True, True)]
+starting measurement
+check iteration duration=7.89165496826e-05
+GetData ===>> L2(CDD),0.0470164320138687,H2,16.6234295583993,H1,0.310556702718138,AX,-0.13401070222076,L1,-0.36...
+action=open, ok=True, locked=[False]
+open () {'description': 'Bone to Diode Laser'}
+open name=--- desc=Bone to Diode Laser
+checking ownership. requestor=129.138.12.137
+check software interlocks B
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open B ===>> OK
+GetIndicatorState B ===>> OK
+change switch state (True, True)
+update switch state B True args=() kw={} ncanvase=2
+04:16:39 -- OPEN   VALVE-B (Bone to Diode Laser)
+-------------------------- open None (Bone to Diode Laser) result=[(True, True)]
+action=open, ok=True, locked=[False]
+open () {'description': 'Bone to CO2 Laser'}
+open name=--- desc=Bone to CO2 Laser
+checking ownership. requestor=129.138.12.137
+check software interlocks D
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open D ===>> OK
+GetIndicatorState D ===>> OK
+change switch state (True, True)
+update switch state D True args=() kw={} ncanvase=2
+04:16:40 -- OPEN   VALVE-D (Bone to CO2 Laser)
+-------------------------- open None (Bone to CO2 Laser) result=[(True, True)]
+action=open, ok=True, locked=[False]
+sleep (1,) {}
+SLEEP 1.0
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.0487461437534909,H2,16.6427051667729,H1,0.419539149898925,AX,-0.196837831088187,L1,-0.6...
+set_resource () {'name': 'CO2PumpTimeFlag', 'value': 30}
+Set CO2PumpTimeFlag 30 ===>> OK
+release ('FelixCO2Flag',) {}
+release FelixCO2Flag
+Set FelixCO2Flag 0 ===>> OK
+executed snippet estimated_duration=6.0, duration=4.18880701065
+PumpBone.py completed successfully
+gosub finished
+get_resource_value () {'name': 'FelixMiniboneFlag'}
+Read FelixMiniboneFlag ===>> 0
+Get Resource Value FelixMiniboneFlag=0.0
+executed snippet estimated_duration=4.0, duration=4.20367598534
+felix_pump_extraction_line.py completed successfully
+Post Equilibration Finished
+04:16:41 -- ******* Post Equilibration Finished *******
+check iteration duration=9.89437103271e-05
+GetData ===>> L2(CDD),0.046544692574486,H2,16.4598371204161,H1,0.131130359595878,AX,0.107246897181628,L1,-0.631...
+check iteration duration=9.01222229004e-05
+GetData ===>> L2(CDD),0.0495323766023507,H2,16.3067288384074,H1,0.25273662642232,AX,-0.318238489770738,L1,-0.59...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0.0459157067392881,H2,16.7962182723936,H1,0.367345597970127,AX,-0.201194304739021,L1,-0.4...
+check iteration duration=8.48770141602e-05
+GetData ===>> L2(CDD),0.0459157067392881,H2,16.5875826297784,H1,0.210207171913374,AX,0.0199789683295434,L1,-0.1...
+check iteration duration=0.000104904174805
+GetData ===>> L2(CDD),0.0492178834448112,H2,16.453256383119,H1,0.272852562069493,AX,-0.188010179272059,L1,-0.52...
+check iteration duration=8.79764556885e-05
+GetData ===>> L2(CDD),0.0467019390482817,H2,16.4270513826188,H1,0.219632456875525,AX,0.0156215130754197,L1,-0.4...
+check iteration duration=8.9168548584e-05
+GetData ===>> L2(CDD),0.0470164320138687,H2,16.673852525131,H1,0.345158445478875,AX,-0.311360674764255,L1,-0.50...
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0.0487461437534909,H2,16.7318009822235,H1,0.309752025791627,AX,-0.0218747207497518,L1,-0....
+check iteration duration=7.08103179932e-05
+GetData ===>> L2(CDD),0.0501613629894118,H2,16.6350653988837,H1,0.647545411797237,AX,-0.074963219975227,L1,-0.5...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0.0504758562189335,H2,16.5484463230901,H1,0.49289080782957,AX,-0.284192824882221,L1,-0.33...
+check iteration duration=6.29425048828e-05
+GetData ===>> L2(CDD),0.0528345562051574,H2,16.5700709972986,H1,0.328144808906841,AX,-0.0860850615244742,L1,-0....
+check iteration duration=8.01086425781e-05
+GetData ===>> L2(CDD),0.0490606368750393,H2,16.4967370678458,H1,0.633631231949294,AX,-0.109933525562326,L1,-0.5...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0102639198303
+GetData ===>> L2(CDD),0.0478026645328102,H2,16.7454364080209,H1,0.574296981581637,AX,-0.266309770901496,L1,-0.5...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0474881715072381,H2,16.7081745268412,H1,0.245265100009557,AX,0.18626502776126,L1,-0.425...
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.0544070236124556,H2,16.6629214533956,H1,0.244345531527122,AX,-0.334859673082391,L1,-0.3...
+check iteration duration=8.89301300049e-05
+GetData ===>> L2(CDD),0.0485888972017145,H2,16.6529307948527,H1,0.202391151788988,AX,-0.0410236099580594,L1,-0....
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0.0544070236124556,H2,16.7337992655971,H1,0.362287342136924,AX,-0.0795495619600327,L1,-0....
+check iteration duration=8.60691070557e-05
+GetData ===>> L2(CDD),0.0456012138576803,H2,16.5698359439439,H1,0.259978314936061,AX,0.159542640802718,L1,-0.54...
+check iteration duration=6.00814819336e-05
+GetData ===>> L2(CDD),0.0463874461066887,H2,16.6672703598998,H1,0.394821587228439,AX,-0.215066102614161,L1,-0.3...
+check iteration duration=9.29832458496e-05
+GetData ===>> L2(CDD),0.0506331028426921,H2,16.7044131533226,H1,0.25917368019463,AX,-0.0568469554526475,L1,-0.3...
+check iteration duration=8.79764556885e-05
+GetData ===>> L2(CDD),0.0511048427499591,H2,16.5083714139345,H1,0.312970737524482,AX,-0.174711226241481,L1,-0.4...
+check iteration duration=7.79628753662e-05
+GetData ===>> L2(CDD),0.0463874461066887,H2,16.4252887394135,H1,0.750470576405495,AX,0.212988156644425,L1,-0.46...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00967001914978
+04:17:04 -- collecting point 25
+GetData ===>> L2(CDD),0.046544692574486,H2,16.6082679115882,H1,0.148600260298203,AX,0.123646353071206,L1,-0.418...
+check iteration duration=6.89029693604e-05
+GetData ===>> L2(CDD),0.0495323766023507,H2,16.4986173569068,H1,0.561763662892133,AX,-0.195232809508402,L1,-0.2...
+check iteration duration=8.08238983154e-05
+GetData ===>> L2(CDD),0.0533062963643623,H2,16.524941780118,H1,0.522325015785143,AX,-0.199818578348821,L1,-0.88...
+check iteration duration=8.79764556885e-05
+GetData ===>> L2(CDD),0.0515765827112127,H2,16.493564088183,H1,0.512781795306521,AX,-0.140545831943128,L1,-0.43...
+check iteration duration=6.60419464111e-05
+GetData ===>> L2(CDD),0.04717367850566,H2,16.5865248713437,H1,0.314810006193151,AX,0.135458721692032,L1,-0.6653...
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.0525200627956801,H2,16.6899555073684,H1,0.484152700195104,AX,-0.071867426779156,L1,-0.7...
+check iteration duration=9.01222229004e-05
+GetData ===>> L2(CDD),0.0515765827112127,H2,16.6564568980789,H1,0.364931427105178,AX,-0.170583927587077,L1,-0.4...
+check iteration duration=7.91549682617e-05
+GetData ===>> L2(CDD),0.0507903494724492,H2,16.7154622288462,H1,0.349067025990554,AX,-0.0112108029066246,L1,-0....
+check iteration duration=7.9870223999e-05
+GetData ===>> L2(CDD),0.0529918029188939,H2,16.6658599016357,H1,0.33458236583824,AX,-0.128392748213897,L1,-0.41...
+check iteration duration=0.000116109848022
+GetData ===>> L2(CDD),0.0490606368750393,H2,16.816790373457,H1,0.29641747729453,AX,-0.215066102614161,L1,-0.569...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0167968273163
+GetData ===>> L2(CDD),0.0451294745802573,H2,16.6665651305151,H1,0.462192805352147,AX,-0.195576742929825,L1,-0.4...
+check iteration duration=8.39233398438e-05
+GetData ===>> L2(CDD),0.0501613629894118,H2,16.8086790366686,H1,0.165150984379505,AX,-0.100990420804758,L1,-0.2...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0.0509475961082049,H2,16.6082679115882,H1,0.542216610069721,AX,-0.0589108509016721,L1,-0....
+check iteration duration=7.89165496826e-05
+GetData ===>> L2(CDD),0.0485888972017145,H2,16.6372985556854,H1,0.115384733329542,AX,0.12169675277112,L1,-0.353...
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.0493751300205817,H2,16.8083263713638,H1,0.309177256969128,AX,-0.152698762197155,L1,-0.4...
+check iteration duration=7.5101852417e-05
+GetData ===>> L2(CDD),0.0489033903112658,H2,16.7010044209596,H1,0.535432725477716,AX,-0.199589290425445,L1,-0.4...
+check iteration duration=0.000128030776978
+GetData ===>> L2(CDD),0.0478026645328102,H2,16.9290628265676,H1,0.165265920955943,AX,-0.0230213715464037,L1,-0....
+check iteration duration=9.20295715332e-05
+GetData ===>> L2(CDD),0.0495323766023507,H2,16.8199643929634,H1,0.536697513903107,AX,0.0292672940602891,L1,-0.3...
+check iteration duration=5.91278076172e-05
+GetData ===>> L2(CDD),0.0511048427499591,H2,16.80280129806,H1,0.357229112823754,AX,-0.366267194260548,L1,-0.259...
+check iteration duration=8.70227813721e-05
+GetData ===>> L2(CDD),0.0498468697838842,H2,16.9752687093585,H1,0.490936224251077,AX,-0.100875765076356,L1,-0.4...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0189979076385
+GetData ===>> L2(CDD),0.0503186096011734,H2,16.7412047039833,H1,0.391717565972674,AX,-0.0466420740158862,L1,-0....
+check iteration duration=8.01086425781e-05
+GetData ===>> L2(CDD),0.0443432425711891,H2,16.7561332963858,H1,0.168024402904887,AX,-0.0935377700219243,L1,-0....
+check iteration duration=0.000131130218506
+GetData ===>> L2(CDD),0.0490606368750393,H2,16.6711491305248,H1,0.245954776946611,AX,-0.379105009949351,L1,-0.5...
+check iteration duration=0.00013279914856
+GetData ===>> L2(CDD),0.0481171575823764,H2,16.7502558708395,H1,0.237793631461062,AX,0.0309873642180022,L1,-0.2...
+check iteration duration=0.000118970870972
+GetData ===>> L2(CDD),0.0515765827112127,H2,16.9930226901735,H1,0.176299896078073,AX,0.0477295410018459,L1,-0.5...
+check iteration duration=8.20159912109e-05
+04:17:31 -- collecting point 50
+GetData ===>> L2(CDD),0.0528345562051574,H2,16.7520190948263,H1,0.564178326309056,AX,-0.381855948170482,L1,-0.5...
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0.0474881715072381,H2,16.6656248254545,H1,0.0465437360112727,AX,-0.0919325761452801,L1,-0...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0.0536207898338249,H2,16.8546441603033,H1,0.335157149796191,AX,-0.0607454209190825,L1,-0....
+check iteration duration=7.48634338379e-05
+GetData ===>> L2(CDD),0.0515765827112127,H2,16.6952448654552,H1,0.186759301511904,AX,0.0488762760961796,L1,-0.5...
+check iteration duration=7.89165496826e-05
+GetData ===>> L2(CDD),0.0515765827112127,H2,17.009953936376,H1,0.247104239603979,AX,-0.183539000054172,L1,-0.38...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0165388584137
+GetData ===>> L2(CDD),0.0492178834448112,H2,16.8789795045627,H1,0.452880121289042,AX,0.105182649806849,L1,-0.59...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0481171575823764,H2,16.8957912282321,H1,0.126303205977974,AX,0.0436013059746875,L1,-0.5...
+check iteration duration=8.58306884766e-05
+GetData ===>> L2(CDD),0.0449722281664466,H2,16.7562508452536,H1,0.323661535704108,AX,-0.166800554936355,L1,-0.6...
+check iteration duration=7.9870223999e-05
+GetData ===>> L2(CDD),0.0482744041161572,H2,16.7829348007829,H1,0.605458506996886,AX,0.0353448890431145,L1,-0.5...
+check iteration duration=7.48634338379e-05
+GetData ===>> L2(CDD),0.0490606368750393,H2,17.0205361128002,H1,0.255495358493993,AX,-0.171386459267479,L1,-0.4...
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.0545642703861773,H2,16.9688021069793,H1,0.388038738898161,AX,-0.0328825120027864,L1,-0....
+check iteration duration=7.79628753662e-05
+GetData ===>> L2(CDD),0.04717367850566,H2,16.9693899781713,H1,0.424482738422683,AX,-0.0790909287451128,L1,-0.41...
+check iteration duration=7.5101852417e-05
+GetData ===>> L2(CDD),0.0482744041161572,H2,16.8230208658432,H1,0.486337219684354,AX,-0.118188625420579,L1,-0.4...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0495323766023507,H2,16.9889075006138,H1,0.184230643650517,AX,-0.0490499771425922,L1,-0....
+check iteration duration=8.60691070557e-05
+GetData ===>> L2(CDD),0.0550360107433336,H2,16.7487277459331,H1,0.196759058896164,AX,-0.0117841348282526,L1,-0....
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00818610191345
+GetData ===>> L2(CDD),0.0492178834448112,H2,16.9987839843938,H1,0.363092062881863,AX,-0.0375837178151427,L1,-0....
+check iteration duration=9.29832458496e-05
+GetData ===>> L2(CDD),0.0501613629894118,H2,16.9720941901665,H1,0.366425913118585,AX,-0.259775495199308,L1,-0.5...
+check iteration duration=9.08374786377e-05
+GetData ===>> L2(CDD),0.0421417937435994,H2,16.9743281100144,H1,0.52864888858141,AX,0.181677440768716,L1,-0.522...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0.0528345562051574,H2,17.0847370827808,H1,0.503238669216664,AX,-0.0106374706428235,L1,-0....
+check iteration duration=9.29832458496e-05
+GetData ===>> L2(CDD),0.0493751300205817,H2,16.77799762684,H1,0.0680344715034449,AX,-0.0896394373915224,L1,-0.4...
+check iteration duration=7.89165496826e-05
+GetData ===>> L2(CDD),0.0511048427499591,H2,16.9236546458756,H1,0.339295604400606,AX,-0.244757956555936,L1,-0.4...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0.0492178834448112,H2,16.8839171838978,H1,0.332628102943531,AX,-0.143182801545464,L1,-0.6...
+check iteration duration=6.79492950439e-05
+GetData ===>> L2(CDD),0.0544070236124556,H2,16.9494025541458,H1,0.238483303056747,AX,0.0206669893836589,L1,-0.7...
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0.0520483227264531,H2,16.9899656905753,H1,0.462077833395883,AX,-0.136762341197172,L1,-0.4...
+check iteration duration=9.3936920166e-05
+GetData ===>> L2(CDD),0.0481171575823764,H2,16.7998624418882,H1,0.426092284337927,AX,-0.210480406434121,L1,-0.3...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0172140598297
+04:17:57 -- collecting point 75
+GetData ===>> L2(CDD),0.0512620893977118,H2,16.9055492132277,H1,0.362977102734585,AX,-0.144100006669686,L1,-0.3...
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.0501613629894118,H2,16.8115003636391,H1,0.450235795286228,AX,0.0549539949078287,L1,-0.3...
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0.0504758562189335,H2,16.9869087004496,H1,0.254001044309144,AX,0.0407344865127336,L1,-0.4...
+check iteration duration=5.79357147217e-05
+GetData ===>> L2(CDD),0.0473309250034498,H2,16.9390562819375,H1,0.343319118952151,AX,-0.154533153432233,L1,-0.6...
+check iteration duration=8.79764556885e-05
+GetData ===>> L2(CDD),0.0470164320138687,H2,17.0890878491034,H1,0.16618541406255,AX,-0.0440048398695228,L1,-0.6...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0.0498468697838842,H2,16.9535175789324,H1,0.246184669368652,AX,0.0173415588450196,L1,-0.6...
+check iteration duration=8.60691070557e-05
+GetData ===>> L2(CDD),0.0500041163836488,H2,17.2447873576677,H1,0.216414056534972,AX,-0.000432099204602079,L1,-...
+check iteration duration=5.91278076172e-05
+GetData ===>> L2(CDD),0.0426135326791076,H2,17.0000773407814,H1,0.606263430580192,AX,-0.0620066857772446,L1,-0....
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0.0559794916196064,H2,16.9064897470018,H1,0.350906363475099,AX,-0.242235904180882,L1,-0.5...
+check iteration duration=8.89301300049e-05
+GetData ===>> L2(CDD),0.0539352833272816,H2,17.0592208124417,H1,0.647545411797237,AX,0.0965816667326665,L1,-0.4...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0178010463715
+GetData ===>> L2(CDD),0.0470164320138687,H2,17.1539988573199,H1,0.42287319519205,AX,0.184429990340559,L1,-0.577...
+check iteration duration=9.51290130615e-05
+GetData ===>> L2(CDD),0.04623019964489,H2,17.0222998199056,H1,0.352860663394979,AX,-0.32190663767334,L1,-0.3244...
+check iteration duration=0.000123023986816
+GetData ===>> L2(CDD),0.0534635430960944,H2,16.9963148541797,H1,0.0903301790390212,AX,-0.240860236462998,L1,-0....
+check iteration duration=8.60691070557e-05
+GetData ===>> L2(CDD),0.0544070236124556,H2,17.1408281625053,H1,0.127682390261021,AX,0.0165388704365253,L1,-0.3...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0495323766023507,H2,17.4608552442674,H1,0.341134923256771,AX,-0.189729858054518,L1,-0.4...
+check iteration duration=8.9168548584e-05
+GetData ===>> L2(CDD),0.0454439674258741,H2,17.0484030536948,H1,0.450120824754857,AX,-0.237764976907102,L1,-0.5...
+check iteration duration=8.01086425781e-05
+GetData ===>> L2(CDD),0.0496896231901182,H2,17.1030809843799,H1,0.122050733517005,AX,0.172387644079524,L1,-0.66...
+check iteration duration=9.01222229004e-05
+GetData ===>> L2(CDD),0.0544070236124556,H2,17.0254745006401,H1,0.414940485641427,AX,-0.108786978314598,L1,-0.5...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0.0427707790029407,H2,17.1838687630925,H1,0.18434558250023,AX,-0.237764976907102,L1,-0.28...
+check iteration duration=9.01222229004e-05
+GetData ===>> L2(CDD),0.0509475961082049,H2,17.0071320418319,H1,0.369414892090552,AX,-0.131259055376504,L1,-0.4...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0174379348755
+GetData ===>> L2(CDD),0.04717367850566,H2,17.1508237630237,H1,0.222965811403697,AX,-0.0636119295696952,L1,-0.37...
+check iteration duration=9.01222229004e-05
+GetData ===>> L2(CDD),0.0522055694101969,H2,17.1227187441885,H1,0.3141202800316,AX,-0.228593779029562,L1,-0.277...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0478026645328102,H2,16.9508134178534,H1,0.283083113100185,AX,-0.348385665546117,L1,-0.4...
+check iteration duration=0.000124931335449
+GetData ===>> L2(CDD),0.051419336051463,H2,16.9588083503063,H1,0.428851512154571,AX,0.00415461983612382,L1,-0.2...
+check iteration duration=9.01222229004e-05
+GetData ===>> L2(CDD),0.051419336051463,H2,17.1516469346379,H1,0.524509621701235,AX,-0.107755084623617,L1,-0.53...
+check iteration duration=6.103515625e-05
+04:18:23 -- collecting point 100
+GetData ===>> L2(CDD),0.0485888972017145,H2,17.1164863589178,H1,0.152508044543877,AX,-0.0585668686343487,L1,-0....
+check iteration duration=7.20024108887e-05
+GetData ===>> L2(CDD),0.0493751300205817,H2,17.268426666872,H1,0.488751694348598,AX,-0.0764537835175842,L1,-0.3...
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0.0544070236124556,H2,17.1427096795726,H1,0.342859287868329,AX,-0.188010179272059,L1,-0.4...
+check iteration duration=8.58306884766e-05
+GetData ===>> L2(CDD),0.0509475961082049,H2,17.0940265800695,H1,0.127912254499903,AX,-0.0896394373915224,L1,-0....
+check iteration duration=8.41617584229e-05
+GetData ===>> L2(CDD),0.0470164320138687,H2,17.0942617583519,H1,0.394821587228439,AX,-0.237077140098333,L1,-0.5...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0040328502655
+GetData ===>> L2(CDD),0.0507903494724492,H2,17.1075494223226,H1,0.223885359507645,AX,-0.0177467665691053,L1,-0....
+check iteration duration=7.60555267334e-05
+GetData ===>> L2(CDD),0.0522055694101969,H2,17.1351836328309,H1,0.278485099214443,AX,-0.221944605911721,L1,-0.5...
+check iteration duration=9.70363616943e-05
+GetData ===>> L2(CDD),0.0495323766023507,H2,17.2691323265981,H1,0.541756684183656,AX,-0.0445781522554406,L1,-0....
+check iteration duration=9.91821289062e-05
+GetData ===>> L2(CDD),0.0496896231901182,H2,17.0027816368884,H1,0.455294512230122,AX,0.103003726825356,L1,-0.45...
+check iteration duration=8.08238983154e-05
+GetData ===>> L2(CDD),0.0481171575823764,H2,17.1124882456978,H1,0.138601002099782,AX,-0.137679552440971,L1,-0.4...
+check iteration duration=8.01086425781e-05
+GetData ===>> L2(CDD),0.0539352833272816,H2,17.1371827333975,H1,0.181012361412894,AX,-0.0457247760022532,L1,-0....
+check iteration duration=8.08238983154e-05
+GetData ===>> L2(CDD),0.0536207898338249,H2,17.2808933963236,H1,0.0484974194534861,AX,-0.398132171718881,L1,-0....
+check iteration duration=8.60691070557e-05
+GetData ===>> L2(CDD),0.0484316506559366,H2,17.2387894140641,H1,0.607873279761923,AX,-0.109016287873314,L1,-0.5...
+check iteration duration=8.9168548584e-05
+GetData ===>> L2(CDD),0.0523628160999392,H2,17.0700386897959,H1,0.634206194084303,AX,-0.16531013132355,L1,-0.69...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0.0531490496386289,H2,17.316177446586,H1,0.266760262994234,AX,-0.143641404217002,L1,-0.55...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0192921161652
+GetData ===>> L2(CDD),0.053778036577554,H2,17.0505195623775,H1,0.285841931950693,AX,-0.10179301052357,L1,-0.415...
+check iteration duration=7.89165496826e-05
+GetData ===>> L2(CDD),0.0468591855280759,H2,17.1537636647993,H1,0.441038196067347,AX,-0.159807008756413,L1,-0.4...
+check iteration duration=9.08374786377e-05
+GetData ===>> L2(CDD),0.0542497768447324,H2,17.3882784456045,H1,0.489901446312094,AX,0.244070497391628,L1,-0.53...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.047959911054594,H2,17.3118256788473,H1,0.0778031459128633,AX,0.0768570358055757,L1,-0.5...
+check iteration duration=0.000102996826172
+GetData ===>> L2(CDD),0.0523628160999392,H2,17.2627814072316,H1,0.392177420343257,AX,-0.227791295056549,L1,-0.6...
+check iteration duration=8.89301300049e-05
+GetData ===>> L2(CDD),0.0474881715072381,H2,17.0750949122769,H1,0.368725126890426,AX,-0.0548977167972284,L1,-0....
+check iteration duration=7.60555267334e-05
+GetData ===>> L2(CDD),0.0555077511544766,H2,17.3436998816455,H1,0.185150154833201,AX,0.0848844531000384,L1,-0.5...
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.0550360107433336,H2,17.4001585610684,H1,0.36458654604634,AX,-0.247967831837188,L1,-0.52...
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.0487461437534909,H2,17.3277038430603,H1,0.351711074727389,AX,0.0629812295179891,L1,-0.5...
+check iteration duration=8.79764556885e-05
+GetData ===>> L2(CDD),0.0509475961082049,H2,17.1394170270597,H1,0.482083159977472,AX,-0.01786143220236,L1,-0.36...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0150549411774
+04:18:49 -- collecting point 125
+GetData ===>> L2(CDD),0.0531490496386289,H2,17.26654491007,H1,0.352630745552157,AX,-0.215868597199027,L1,-0.549...
+check iteration duration=5.22136688232e-05
+GetData ===>> L2(CDD),0.0567657258481268,H2,17.3605195254102,H1,0.404018745874937,AX,-0.0261173218734371,L1,-0....
+check iteration duration=7.20024108887e-05
+GetData ===>> L2(CDD),0.0551932575410494,H2,17.2825399572715,H1,0.529223788163348,AX,-0.138826065266429,L1,-0.5...
+check iteration duration=7.91549682617e-05
+GetData ===>> L2(CDD),0.0511048427499591,H2,17.319705921003,H1,0.361252702165616,AX,-0.169552100157345,L1,-0.54...
+check iteration duration=8.60691070557e-05
+GetData ===>> L2(CDD),0.0526773094974195,H2,17.4201551179806,H1,0.301360434981782,AX,-0.204633612111787,L1,-0.3...
+check iteration duration=8.39233398438e-05
+GetData ===>> L2(CDD),0.0459157067392881,H2,17.5963775905564,H1,0.566478011371726,AX,-0.10259559957321,L1,-0.45...
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0.047959911054594,H2,17.4381523656504,H1,0.25273662642232,AX,0.031216707137845,L1,-0.4436...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0.0539352833272816,H2,17.2826575688727,H1,0.338031074721647,AX,-0.243267653678719,L1,-0.4...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0.0487461437534909,H2,17.206565792137,H1,0.39240734761103,AX,-0.0991559275055,L1,-0.39747...
+check iteration duration=8.48770141602e-05
+GetData ===>> L2(CDD),0.0481171575823764,H2,17.1601138825303,H1,0.308372581193072,AX,0.050023012557282,L1,-0.75...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0201230049133
+GetData ===>> L2(CDD),0.0545642703861773,H2,17.2436112874208,H1,0.192161456421651,AX,-0.256565659304934,L1,-0.6...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0.0539352833272816,H2,17.3120609090448,H1,0.202161269802884,AX,0.0890128652078539,L1,-0.4...
+check iteration duration=7.5101852417e-05
+GetData ===>> L2(CDD),0.056293985293019,H2,17.4167439119593,H1,0.0975706485170841,AX,-0.106149914460999,L1,-0.2...
+check iteration duration=9.60826873779e-05
+GetData ===>> L2(CDD),0.0526773094974195,H2,17.4653253026344,H1,0.752080666189668,AX,0.0219283625935646,L1,-0.4...
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.053778036577554,H2,17.6240940126764,H1,0.318718463756705,AX,-0.0120134675017109,L1,-0.3...
+check iteration duration=7.58171081543e-05
+GetData ===>> L2(CDD),0.0481171575823764,H2,17.2656040330147,H1,0.320442788303919,AX,-0.106723189826825,L1,-0.5...
+check iteration duration=8.48770141602e-05
+GetData ===>> L2(CDD),0.056293985293019,H2,17.3998056842907,H1,0.296187572902182,AX,0.0250244674815221,L1,-0.44...
+check iteration duration=9.20295715332e-05
+GetData ===>> L2(CDD),0.0487461437534909,H2,17.4212137705224,H1,0.176299896078073,AX,-0.297146367967542,L1,-0.5...
+check iteration duration=7.48634338379e-05
+GetData ===>> L2(CDD),0.0496896231901182,H2,17.3347608869435,H1,0.618912317933574,AX,-0.182392540498286,L1,-0.5...
+check iteration duration=8.6784362793e-05
+GetData ===>> L2(CDD),0.0489033903112658,H2,17.4688543103843,H1,0.498869558649841,AX,-0.181016787228157,L1,-0.3...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00657892227173
+GetData ===>> L2(CDD),0.0523628160999392,H2,17.3682825346097,H1,0.296647381741723,AX,-0.168061680805995,L1,-0.7...
+check iteration duration=7.5101852417e-05
+GetData ===>> L2(CDD),0.0504758562189335,H2,17.4884993508484,H1,0.464722191855038,AX,-0.223320300670896,L1,-0.4...
+check iteration duration=0.000200033187866
+GetData ===>> L2(CDD),0.051733829376961,H2,17.4933224445255,H1,0.378381884566166,AX,-0.190188438544436,L1,-0.22...
+check iteration duration=7.58171081543e-05
+GetData ===>> L2(CDD),0.0511048427499591,H2,17.6505410681958,H1,0.262737067715719,AX,-0.0441195023738494,L1,-0....
+check iteration duration=8.48770141602e-05
+GetData ===>> L2(CDD),0.055664997970188,H2,17.4335648007619,H1,0.446786685304343,AX,-0.0466420740158862,L1,-0.5...
+check iteration duration=7.60555267334e-05
+04:19:16 -- collecting point 150
+GetData ===>> L2(CDD),0.0522055694101969,H2,17.3941596730078,H1,0.505883140486439,AX,-0.0199254112598044,L1,-0....
+check iteration duration=8.79764556885e-05
+GetData ===>> L2(CDD),0.0470164320138687,H2,17.2690147166088,H1,0.113201053629076,AX,-0.183195062330901,L1,-0.5...
+check iteration duration=7.5101852417e-05
+GetData ===>> L2(CDD),0.0490606368750393,H2,17.3154717532165,H1,0.263426757143249,AX,-0.317665340397697,L1,-0.7...
+check iteration duration=7.91549682617e-05
+GetData ===>> L2(CDD),0.0515765827112127,H2,17.2215014276663,H1,0.492545881028236,AX,0.0320194077880566,L1,-0.5...
+check iteration duration=9.29832458496e-05
+GetData ===>> L2(CDD),0.0503186096011734,H2,17.3573437665212,H1,0.239058029763363,AX,0.046926827248607,L1,-0.62...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0142498016357
+GetData ===>> L2(CDD),0.0484316506559366,H2,17.4759123637435,H1,0.272162865903122,AX,-0.105347328375932,L1,-0.5...
+check iteration duration=7.31945037842e-05
+GetData ===>> L2(CDD),0.0575519602266105,H2,17.3959240480639,H1,0.409077220501846,AX,-0.0897540944591227,L1,-0....
+check iteration duration=8.58306884766e-05
+GetData ===>> L2(CDD),0.051733829376961,H2,17.5935540185177,H1,0.658469908480066,AX,-0.0475593711555993,L1,-0.5...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0495323766023507,H2,17.5148501988327,H1,0.210896823788495,AX,0.179383655471775,L1,-0.38...
+check iteration duration=7.10487365723e-05
+GetData ===>> L2(CDD),0.0495323766023507,H2,17.5424958179645,H1,0.308717442157716,AX,-0.0422849006627916,L1,-0....
+check iteration duration=9.01222229004e-05
+GetData ===>> L2(CDD),0.0501613629894118,H2,17.5639069998232,H1,0.408617358076146,AX,0.0281205823296868,L1,-0.5...
+check iteration duration=6.41345977783e-05
+GetData ===>> L2(CDD),0.0548787639516163,H2,17.5543777900937,H1,0.366310952573897,AX,0.068370981752853,L1,-0.44...
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.0481171575823764,H2,17.3931010494884,H1,0.0855032295787583,AX,-0.39056720065151,L1,-0.3...
+check iteration duration=9.08374786377e-05
+GetData ===>> L2(CDD),0.051419336051463,H2,17.4620315734537,H1,0.316534323754938,AX,-0.176660222230791,L1,-0.41...
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0.0547215171658975,H2,17.4710893551532,H1,0.194805075167293,AX,-0.173335461990396,L1,-0.4...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0156998634338
+GetData ===>> L2(CDD),0.055822244791898,H2,17.5987305734259,H1,0.41517041833348,AX,-0.162673222353599,L1,-0.465...
+check iteration duration=7.89165496826e-05
+GetData ===>> L2(CDD),0.051419336051463,H2,17.6396095326555,H1,0.508642596495175,AX,0.0608024020756646,L1,-0.42...
+check iteration duration=8.39233398438e-05
+GetData ===>> L2(CDD),0.0495323766023507,H2,17.2466690729781,H1,0.536352571440583,AX,-0.0261173218734371,L1,-0....
+check iteration duration=9.89437103271e-05
+GetData ===>> L2(CDD),0.0515765827112127,H2,17.5489661810868,H1,0.474149963599943,AX,-0.209333978974753,L1,-0.5...
+check iteration duration=8.9168548584e-05
+GetData ===>> L2(CDD),0.0526773094974195,H2,17.5241437460875,H1,0.464607219597127,AX,0.132476945060662,L1,-0.66...
+check iteration duration=7.91549682617e-05
+GetData ===>> L2(CDD),0.0487461437534909,H2,17.7347061921605,H1,0.375277916200929,AX,-0.0546683943427979,L1,-0....
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.0468591855280759,H2,17.5880245466747,H1,0.35780391027417,AX,0.0534632301373549,L1,-0.27...
+check iteration duration=7.82012939453e-05
+GetData ===>> L2(CDD),0.0500041163836488,H2,17.4559146769969,H1,0.569927549242061,AX,0.200830761386347,L1,-0.37...
+check iteration duration=8.48770141602e-05
+GetData ===>> L2(CDD),0.0495323766023507,H2,17.7080217794548,H1,0.636276060608381,AX,-0.192595982530258,L1,-0.5...
+check iteration duration=8.9168548584e-05
+GetData ===>> L2(CDD),0.0526773094974195,H2,17.3564028028871,H1,0.152508044543877,AX,-0.08333327764407,L1,-0.47...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0163879394531
+04:19:42 -- collecting point 175
+GetData ===>> L2(CDD),0.0577092071203028,H2,17.5137914458377,H1,0.666059631618821,AX,0.117797564018343,L1,-0.31...
+check iteration duration=9.10758972168e-05
+GetData ===>> L2(CDD),0.051419336051463,H2,17.7432876764289,H1,0.134578341255176,AX,-0.156367541170776,L1,-0.47...
+check iteration duration=9.48905944824e-05
+GetData ===>> L2(CDD),0.0529918029188939,H2,17.5892010274513,H1,0.573262114239625,AX,-0.0371250646005165,L1,-0....
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0512620893977118,H2,17.4481509784025,H1,0.412411229642176,AX,-0.000317431495013037,L1,-...
+check iteration duration=8.9168548584e-05
+GetData ===>> L2(CDD),0.0518910760487078,H2,17.5099093612404,H1,0.249288222426322,AX,0.0562154130556812,L1,-0.5...
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.0523628160999392,H2,17.6224484415305,H1,0.404478606108773,AX,-0.17241828473009,L1,-0.41...
+check iteration duration=5.79357147217e-05
+GetData ===>> L2(CDD),0.0512620893977118,H2,17.5582600496174,H1,0.455524454539725,AX,-0.12231614879528,L1,-0.24...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0.0503186096011734,H2,17.5163795107191,H1,0.386199330620542,AX,0.0955495539293086,L1,-0.6...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0512620893977118,H2,17.6701711187364,H1,0.435519678621822,AX,0.0419958860240152,L1,-0.6...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0.0506331028426921,H2,17.5633187743361,H1,0.216873827355066,AX,-0.117386049375439,L1,-0.5...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00536417961121
+GetData ===>> L2(CDD),0.0509475961082049,H2,17.6685254707635,H1,0.290439980898976,AX,0.106558814231374,L1,-0.61...
+check iteration duration=8.70227813721e-05
+GetData ===>> L2(CDD),0.0506331028426921,H2,17.3835734889185,H1,0.454144801504777,AX,-0.163246464048612,L1,-0.2...
+check iteration duration=8.08238983154e-05
+GetData ===>> L2(CDD),0.051419336051463,H2,17.5390841890353,H1,0.249288222426322,AX,-0.190532373767984,L1,-0.50...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0.0489033903112658,H2,17.7378801570997,H1,0.301245482189706,AX,-0.00467479485568305,L1,-0...
+check iteration duration=8.41617584229e-05
+GetData ===>> L2(CDD),0.0518910760487078,H2,17.8329862858701,H1,0.644440577415617,AX,-0.308265641973359,L1,-0.6...
+check iteration duration=7.41481781006e-05
+GetData ===>> L2(CDD),0.0555077511544766,H2,17.7717364182135,H1,0.228598057295956,AX,-0.268029309764662,L1,-0.5...
+check iteration duration=8.32080841064e-05
+GetData ===>> L2(CDD),0.0580237009256831,H2,17.5807303971651,H1,0.410341843302569,AX,-0.198557494096061,L1,-0.3...
+check iteration duration=8.39233398438e-05
+GetData ===>> L2(CDD),0.0522055694101969,H2,17.5522602004266,H1,0.30354454063142,AX,-0.384033768684434,L1,-0.51...
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0.0478026645328102,H2,17.3561675621184,H1,0.193770614795581,AX,0.0466974805847368,L1,-0.3...
+check iteration duration=7.48634338379e-05
+GetData ===>> L2(CDD),0.0539352833272816,H2,17.5489661810868,H1,0.41160646776042,AX,-0.277200131805153,L1,-0.52...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00637292861938
+GetData ===>> L2(CDD),0.0533062963643623,H2,17.4560323092639,H1,0.412756127797168,AX,0.0330514524654179,L1,-0.6...
+check iteration duration=0.000101089477539
+GetData ===>> L2(CDD),0.0531490496386289,H2,17.5723774857164,H1,0.455639425715094,AX,-0.210365763749544,L1,-0.5...
+check iteration duration=8.48770141602e-05
+GetData ===>> L2(CDD),0.0503186096011734,H2,17.6217901024275,H1,0.319063328419303,AX,-0.157628680712805,L1,-0.6...
+check iteration duration=9.01222229004e-05
+GetData ===>> L2(CDD),0.0536207898338249,H2,17.7344710840526,H1,0.388038738898161,AX,-0.278575747573214,L1,-0.6...
+check iteration duration=7.89165496826e-05
+GetData ===>> L2(CDD),0.0522055694101969,H2,18.0206390969346,H1,0.425057575941513,AX,-0.121628229462316,L1,-0.2...
+check iteration duration=8.20159912109e-05
+04:20:08 -- collecting point 200
+GetData ===>> L2(CDD),0.0523628160999392,H2,17.7270652073192,H1,0.388153702031695,AX,-0.194201008507854,L1,-0.5...
+check iteration duration=5.81741333008e-05
+GetData ===>> L2(CDD),0.0528345562051574,H2,17.8272255797682,H1,0.251472210192409,AX,0.0741047938605775,L1,-0.4...
+check iteration duration=7.60555267334e-05
+GetData ===>> L2(CDD),0.0470164320138687,H2,17.656300743151,H1,0.26285201591947,AX,-0.0723260634367518,L1,-0.70...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0526773094974195,H2,17.6888611704042,H1,0.319523148161605,AX,0.111604767289721,L1,-0.51...
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.0512620893977118,H2,17.7684447863058,H1,0.232736054823773,AX,0.0617198025024896,L1,-0.5...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.013524055481
+GetData ===>> L2(CDD),0.0504758562189335,H2,17.7682096701612,H1,0.513931575905432,AX,-0.119105854366758,L1,-0.4...
+check iteration duration=7.79628753662e-05
+GetData ===>> L2(CDD),0.0489033903112658,H2,17.6590042756407,H1,0.584645716050454,AX,-0.0386156867493632,L1,-0....
+check iteration duration=8.48770141602e-05
+GetData ===>> L2(CDD),0.0470164320138687,H2,17.6593569108589,H1,0.294348339735669,AX,0.129609860856985,L1,-0.26...
+check iteration duration=8.89301300049e-05
+GetData ===>> L2(CDD),0.0504758562189335,H2,17.6545375737787,H1,0.534167938710095,AX,-0.219995701635909,L1,-0.5...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0.0500041163836488,H2,17.8487402252704,H1,0.477714145207384,AX,-0.143412102908269,L1,-0.5...
+check iteration duration=8.79764556885e-05
+GetData ===>> L2(CDD),0.0536207898338249,H2,17.8331038516505,H1,0.371369229501997,AX,0.163327311455045,L1,-0.54...
+check iteration duration=7.41481781006e-05
+GetData ===>> L2(CDD),0.0518910760487078,H2,17.8267553195301,H1,0.308142673952007,AX,0.0736460876347716,L1,-0.5...
+check iteration duration=9.70363616943e-05
+GetData ===>> L2(CDD),0.0487461437534909,H2,17.6876856850264,H1,0.247449078668622,AX,-0.0143067912272652,L1,-0....
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0.0520483227264531,H2,17.874958159451,H1,0.507952731753443,AX,0.037179642240027,L1,-0.802...
+check iteration duration=0.000124931335449
+GetData ===>> L2(CDD),0.0580237009256831,H2,17.7418770163565,H1,0.479898650119484,AX,-0.251292334233608,L1,-0.5...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0166668891907
+GetData ===>> L2(CDD),0.0572374664572214,H2,17.8284012313444,H1,0.276530949948741,AX,0.126628102345186,L1,-0.45...
+check iteration duration=7.41481781006e-05
+GetData ===>> L2(CDD),0.0493751300205817,H2,17.8334565490766,H1,0.333087929150879,AX,-0.0821866987048322,L1,-0....
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.0522055694101969,H2,17.8541483519937,H1,0.382750449553158,AX,-0.176660222230791,L1,-0.5...
+check iteration duration=7.20024108887e-05
+GetData ===>> L2(CDD),0.0536207898338249,H2,17.6358481720801,H1,0.299866049754272,AX,-0.0878049224539318,L1,-0....
+check iteration duration=9.79900360107e-05
+GetData ===>> L2(CDD),0.051733829376961,H2,17.7893703475,H1,0.491396125913735,AX,-0.0104081376419391,L1,-0.6192...
+check iteration duration=7.91549682617e-05
+GetData ===>> L2(CDD),0.0544070236124556,H2,17.6909770476121,H1,0.141359407802237,AX,-0.32477236849253,L1,-0.33...
+check iteration duration=8.60691070557e-05
+GetData ===>> L2(CDD),0.053778036577554,H2,17.9467965158502,H1,0.500939134873086,AX,-0.0386156867493632,L1,-0.5...
+check iteration duration=7.82012939453e-05
+GetData ===>> L2(CDD),0.0525200627956801,H2,17.9510293808033,H1,0.232736054823773,AX,-0.0592548330467449,L1,-0....
+check iteration duration=9.20295715332e-05
+GetData ===>> L2(CDD),0.0544070236124556,H2,17.8923587872291,H1,0.429311384224601,AX,-0.0770270765733949,L1,-0....
+check iteration duration=9.29832458496e-05
+GetData ===>> L2(CDD),0.0567657258481268,H2,17.892123641566,H1,0.336191761782937,AX,0.130986060208598,L1,-0.517...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00848698616028
+04:20:35 -- collecting point 225
+GetData ===>> L2(CDD),0.0500041163836488,H2,17.7690325769131,H1,0.396086191343153,AX,-0.0477886953037972,L1,-0....
+check iteration duration=8.01086425781e-05
+GetData ===>> L2(CDD),0.0533062963643623,H2,17.580495102917,H1,0.329179413373851,AX,-0.0337998222574955,L1,-0.3...
+check iteration duration=4.81605529785e-05
+GetData ===>> L2(CDD),0.0520483227264531,H2,17.7156626168681,H1,0.361367662107869,AX,0.0129841155321163,L1,-0.4...
+check iteration duration=8.41617584229e-05
+GetData ===>> L2(CDD),0.0536207898338249,H2,17.8046533410548,H1,0.587290410443462,AX,-0.0827599883448964,L1,-0....
+check iteration duration=7.48634338379e-05
+GetData ===>> L2(CDD),0.0551932575410494,H2,17.9290421966995,H1,0.338260989085466,AX,-0.325460142619295,L1,-0.6...
+check iteration duration=7.41481781006e-05
+GetData ===>> L2(CDD),0.0518910760487078,H2,17.6062601563073,H1,0.35906846586987,AX,-0.246133618701806,L1,-0.48...
+check iteration duration=0.000100135803223
+GetData ===>> L2(CDD),0.0489033903112658,H2,18.0335738755289,H1,0.442302860760932,AX,0.0524311635722441,L1,-0.7...
+check iteration duration=8.41617584229e-05
+GetData ===>> L2(CDD),0.0496896231901182,H2,18.0182873372177,H1,0.166989971249786,AX,0.135688089507797,L1,-0.52...
+check iteration duration=7.60555267334e-05
+GetData ===>> L2(CDD),0.0503186096011734,H2,17.7871366990312,H1,0.350331570134831,AX,-0.403404692138913,L1,-0.4...
+check iteration duration=7.5101852417e-05
+GetData ===>> L2(CDD),0.0534635430960944,H2,17.7543379167525,H1,0.210666939775277,AX,-0.164851538978329,L1,-0.4...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0062530040741
+GetData ===>> L2(CDD),0.0526773094974195,H2,17.918813031986,H1,0.47346012351952,AX,0.0707791786773539,L1,-0.546...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0551932575410494,H2,17.6996757015671,H1,0.0901003237554822,AX,0.0515137719987468,L1,-0....
+check iteration duration=9.29832458496e-05
+GetData ===>> L2(CDD),0.0586526886084261,H2,18.1677528038565,H1,0.392292383970395,AX,0.0520871416299421,L1,-0.5...
+check iteration duration=0.000114917755127
+GetData ===>> L2(CDD),0.0536207898338249,H2,18.0622661711853,H1,0.438968748326197,AX,0.151055857685395,L1,-0.41...
+check iteration duration=0.000117063522339
+GetData ===>> L2(CDD),0.0523628160999392,H2,17.849445631423,H1,0.353320499245586,AX,-0.248197108233328,L1,-0.44...
+check iteration duration=0.000134944915771
+GetData ===>> L2(CDD),0.0544070236124556,H2,17.8445077989385,H1,0.223425585346303,AX,-0.146622316254167,L1,-0.6...
+check iteration duration=8.70227813721e-05
+GetData ===>> L2(CDD),0.0507903494724492,H2,18.1074229484766,H1,0.599134130775019,AX,0.00151725371674744,L1,-0....
+check iteration duration=8.39233398438e-05
+GetData ===>> L2(CDD),0.0555077511544766,H2,17.8961211254592,H1,0.390567931004928,AX,-0.0687716236245876,L1,-0....
+check iteration duration=0.000126123428345
+GetData ===>> L2(CDD),0.0512620893977118,H2,18.1022486296275,H1,0.43494483487018,AX,-0.455669853598647,L1,-0.43...
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.0561367384533135,H2,17.93433318556,H1,0.44092322663223,AX,-0.0370104012628777,L1,-0.697...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0168468952179
+GetData ===>> L2(CDD),0.0500041163836488,H2,17.8636714297732,H1,0.285267177372632,AX,-0.275595244257618,L1,-0.4...
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.0485888972017145,H2,18.0283999437523,H1,0.46575694278981,AX,-0.136074432190953,L1,-0.48...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.047959911054594,H2,18.0508597078801,H1,0.225609514564705,AX,-0.117844664340416,L1,-0.34...
+check iteration duration=0.000118970870972
+GetData ===>> L2(CDD),0.0545642703861773,H2,17.8733121700016,H1,0.524739580506698,AX,-0.04331686455589,L1,-0.40...
+check iteration duration=7.60555267334e-05
+GetData ===>> L2(CDD),0.0534635430960944,H2,18.1108333098194,H1,0.352285868890329,AX,-0.183195062330901,L1,-0.4...
+check iteration duration=0.000123023986816
+04:21:01 -- collecting point 250
+GetData ===>> L2(CDD),0.0539352833272816,H2,18.0107617437742,H1,0.460468227447859,AX,-0.235816104671812,L1,-0.5...
+check iteration duration=0.000125885009766
+GetData ===>> L2(CDD),0.055664997970188,H2,18.1965666087897,H1,0.500479228662166,AX,-0.19775498507474,L1,-0.595...
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.0531490496386289,H2,18.1671647757775,H1,0.611552945120202,AX,0.0625225285938355,L1,-0.3...
+check iteration duration=8.70227813721e-05
+GetData ===>> L2(CDD),0.0485888972017145,H2,17.7947781489362,H1,0.238253412470079,AX,-0.132749531727135,L1,-0.5...
+check iteration duration=7.79628753662e-05
+GetData ===>> L2(CDD),0.0504758562189335,H2,17.8019494095806,H1,0.253541255794959,AX,0.0549539949078287,L1,-0.4...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.019464969635
+GetData ===>> L2(CDD),0.0564512321387231,H2,17.9706654084073,H1,0.315499732847663,AX,0.0580502060399914,L1,-0.4...
+check iteration duration=8.70227813721e-05
+GetData ===>> L2(CDD),0.051419336051463,H2,18.126709284944,H1,0.332858016019997,AX,-0.179641031991548,L1,-0.756...
+check iteration duration=6.5803527832e-05
+GetData ===>> L2(CDD),0.0542497768447324,H2,18.0120552010646,H1,0.323661535704108,AX,-0.0978947113333727,L1,-0....
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0.0501613629894118,H2,18.247139809982,H1,0.414710553004005,AX,-0.0282959476150999,L1,-0.3...
+check iteration duration=9.10758972168e-05
+GetData ===>> L2(CDD),0.0528345562051574,H2,17.9278664252483,H1,0.446556745077128,AX,-0.0653318306614236,L1,-0....
+check iteration duration=7.60555267334e-05
+GetData ===>> L2(CDD),0.0542497768447324,H2,18.1835120868475,H1,0.321247474146996,AX,-0.156367541170776,L1,-0.6...
+check iteration duration=0.000130891799927
+GetData ===>> L2(CDD),0.0544070236124556,H2,18.0949575900099,H1,0.379071656670096,AX,0.109540510568765,L1,-0.46...
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.0550360107433336,H2,18.0542698738192,H1,0.518645690685315,AX,-0.169552100157345,L1,-0.6...
+check iteration duration=9.67979431152e-05
+GetData ===>> L2(CDD),0.0498468697838842,H2,18.0674402804677,H1,0.362287342136924,AX,-0.0438901773513041,L1,-0....
+check iteration duration=5.19752502441e-05
+GetData ===>> L2(CDD),0.0476454180170249,H2,18.1037774028285,H1,0.471390606236872,AX,-0.298292690815774,L1,-0.5...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00590801239014
+GetData ===>> L2(CDD),0.0529918029188939,H2,17.8908303414192,H1,0.361597582032651,AX,0.0563300875149066,L1,-0.4...
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0.0523628160999392,H2,18.150817735399,H1,0.440003471642111,AX,-0.0800081949565263,L1,-0.5...
+check iteration duration=7.48634338379e-05
+GetData ===>> L2(CDD),0.0493751300205817,H2,18.1511705463627,H1,0.372403880322292,AX,-0.0365517477748977,L1,-0....
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0.0523628160999392,H2,18.130942921431,H1,0.34619306819078,AX,-0.0975507429998243,L1,-0.43...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0.0484316506559366,H2,18.2199710938076,H1,0.475414671695692,AX,-0.220798192109783,L1,-0.5...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0.0512620893977118,H2,18.2567842959699,H1,0.550150366117483,AX,-0.0941110529005973,L1,-0....
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.047959911054594,H2,18.2162075210908,H1,0.487486968771068,AX,-0.12082565628536,L1,-0.634...
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0.053778036577554,H2,17.936802323401,H1,0.321822250160163,AX,-0.116239511006899,L1,-0.456...
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.0489033903112658,H2,18.165871115237,H1,0.359183425551395,AX,-0.0754218551572681,L1,-0.5...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0501613629894118,H2,18.2563138310528,H1,0.604883561991024,AX,-0.122086842405458,L1,-0.5...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0137240886688
+04:21:27 -- collecting point 275
+GetData ===>> L2(CDD),0.0529918029188939,H2,17.9834819484797,H1,0.34998669429439,AX,-0.0349464588459502,L1,-0.5...
+check iteration duration=6.38961791992e-05
+GetData ===>> L2(CDD),0.0506331028426921,H2,18.344529923066,H1,0.538422228063741,AX,0.0262858464025764,L1,-0.35...
+check iteration duration=8.01086425781e-05
+GetData ===>> L2(CDD),0.0544070236124556,H2,18.0968391434654,H1,0.285267177372632,AX,0.132476945060662,L1,-0.39...
+check iteration duration=9.01222229004e-05
+GetData ===>> L2(CDD),0.0561367384533135,H2,18.097427129656,H1,0.380566164586932,AX,0.104609248543986,L1,-0.545...
+check iteration duration=9.10758972168e-05
+GetData ===>> L2(CDD),0.051733829376961,H2,17.8125300532191,H1,0.313545508606758,AX,-0.183309708251909,L1,-0.58...
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0.0534635430960944,H2,18.202682300068,H1,0.111017378872141,AX,0.0980724982920758,L1,-0.70...
+check iteration duration=7.67707824707e-05
+GetData ===>> L2(CDD),0.0573947133389167,H2,18.1435263370591,H1,0.539687020407536,AX,-0.088034237012521,L1,-0.4...
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.0525200627956801,H2,18.3174761501921,H1,0.331708451185902,AX,-0.164278298239093,L1,-0.4...
+check iteration duration=7.91549682617e-05
+GetData ===>> L2(CDD),0.0523628160999392,H2,18.1275324906167,H1,0.622477034318133,AX,-0.231115867159245,L1,-0.6...
+check iteration duration=0.000102043151855
+GetData ===>> L2(CDD),0.0482744041161572,H2,18.2527853513217,H1,0.0863077194780605,AX,0.0992192933712088,L1,-0....
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0149269104004
+GetData ===>> L2(CDD),0.051419336051463,H2,18.3472353411266,H1,0.273427309250789,AX,-0.362713840010095,L1,-0.46...
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0.055664997970188,H2,18.2747797473402,H1,0.54014694530768,AX,-0.0692302617570968,L1,-0.56...
+check iteration duration=7.5101852417e-05
+GetData ===>> L2(CDD),0.0523628160999392,H2,18.3747604506172,H1,0.188023632928182,AX,-0.0460687628599533,L1,-0....
+check iteration duration=8.39233398438e-05
+GetData ===>> L2(CDD),0.0529918029188939,H2,17.9875973865514,H1,0.472770283931415,AX,-0.0841358820885067,L1,-0....
+check iteration duration=7.58171081543e-05
+GetData ===>> L2(CDD),0.0512620893977118,H2,18.4174611775072,H1,0.256529885055029,AX,0.00839735441115517,L1,-0....
+check iteration duration=7.41481781006e-05
+GetData ===>> L2(CDD),0.0602251582351812,H2,18.2067986520683,H1,0.404593571201724,AX,-0.112570579047504,L1,-0.6...
+check iteration duration=9.08374786377e-05
+GetData ===>> L2(CDD),0.055822244791898,H2,18.1598732566992,H1,0.677099335478283,AX,-0.0280666188215979,L1,-0.4...
+check iteration duration=7.5101852417e-05
+GetData ===>> L2(CDD),0.0539352833272816,H2,18.2776025930037,H1,0.19342579491805,AX,-0.338871639833363,L1,-0.53...
+check iteration duration=0.000119924545288
+GetData ===>> L2(CDD),0.0518910760487078,H2,18.2452579700427,H1,0.639955834280007,AX,0.0570181345560091,L1,-0.5...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0540925300830077,H2,18.3068900930374,H1,0.206414095414904,AX,-0.228708419542482,L1,-0.4...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0105950832367
+GetData ===>> L2(CDD),0.0548787639516163,H2,18.2032703493029,H1,0.443567527112072,AX,-0.093996396352134,L1,-0.5...
+check iteration duration=8.01086425781e-05
+GetData ===>> L2(CDD),0.0575519602266105,H2,18.13200133339,H1,0.570732443186464,AX,-0.182736478508375,L1,-0.589...
+check iteration duration=0.0001220703125
+GetData ===>> L2(CDD),0.0547215171658975,H2,18.1910389973456,H1,0.574181996266807,AX,-0.0490499771425922,L1,-0....
+check iteration duration=8.89301300049e-05
+GetData ===>> L2(CDD),0.0496896231901182,H2,18.2850126012718,H1,0.535432725477716,AX,0.0508257288927415,L1,-0.5...
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.0572374664572214,H2,18.3424126445374,H1,0.186874240663263,AX,-0.0922765464869848,L1,-0....
+check iteration duration=9.3936920166e-05
+04:21:54 -- collecting point 300
+GetData ===>> L2(CDD),0.0567657258481268,H2,18.3905230383476,H1,0.310211841095999,AX,-0.198557494096061,L1,-0.4...
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0.056293985293019,H2,18.215031407559,H1,0.284922324790459,AX,0.0504817075240763,L1,-0.421...
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.0495323766023507,H2,18.5040446283254,H1,0.521290204182591,AX,0.0194056178264855,L1,-0.5...
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.055822244791898,H2,18.1359997888083,H1,0.332743059474908,AX,0.0596556527707827,L1,-0.49...
+check iteration duration=5.22136688232e-05
+GetData ===>> L2(CDD),0.0542497768447324,H2,18.2611361070808,H1,0.637196002710762,AX,-0.164163650050681,L1,-0.4...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0072968006134
+GetData ===>> L2(CDD),0.0547215171658975,H2,18.3612330573246,H1,0.343089203383246,AX,-0.260119405553222,L1,-0.6...
+check iteration duration=7.60555267334e-05
+GetData ===>> L2(CDD),0.0522055694101969,H2,18.3391191091848,H1,0.0466586584572468,AX,-0.0569616164267061,L1,-0...
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0.0540925300830077,H2,18.2813663997768,H1,0.40953708314671,AX,-0.180214263579097,L1,-0.47...
+check iteration duration=0.000113964080811
+GetData ===>> L2(CDD),0.0531490496386289,H2,18.129061302973,H1,0.42793176867222,AX,0.0767423589006998,L1,-0.447...
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.055822244791898,H2,18.3194757515115,H1,0.247219185945149,AX,-0.0806961440412358,L1,-0.5...
+check iteration duration=0.000113010406494
+GetData ===>> L2(CDD),0.0501613629894118,H2,18.395110704444,H1,0.654100094965245,AX,-0.29130010020084,L1,-0.421...
+check iteration duration=7.60555267334e-05
+GetData ===>> L2(CDD),0.0515765827112127,H2,18.4935742150843,H1,0.258139150799018,AX,0.111031362200975,L1,-0.50...
+check iteration duration=7.60555267334e-05
+GetData ===>> L2(CDD),0.0561367384533135,H2,18.5014564259573,H1,0.105960466833907,AX,0.0590822786310671,L1,-0.5...
+check iteration duration=7.5101852417e-05
+GetData ===>> L2(CDD),0.0542497768447324,H2,18.401227625732,H1,0.387808812671368,AX,-0.138596762810423,L1,-0.52...
+check iteration duration=6.19888305664e-05
+GetData ===>> L2(CDD),0.0503186096011734,H2,18.2663112587764,H1,0.445407044763727,AX,-0.144443958366271,L1,-0.5...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0157251358032
+GetData ===>> L2(CDD),0.0553505043447637,H2,18.2983037078275,H1,0.529108808219881,AX,-0.198557494096061,L1,-0.3...
+check iteration duration=0.000108003616333
+GetData ===>> L2(CDD),0.0511048427499591,H2,18.4113441556448,H1,0.261587586432113,AX,0.214364475217386,L1,-0.56...
+check iteration duration=8.58306884766e-05
+GetData ===>> L2(CDD),0.0533062963643623,H2,18.3949930717135,H1,0.474609857261259,AX,0.10116884814069,L1,-0.600...
+check iteration duration=7.9870223999e-05
+GetData ===>> L2(CDD),0.0515765827112127,H2,18.4462822712094,H1,0.453914859524242,AX,-0.181704664109218,L1,-0.2...
+check iteration duration=0.000172853469849
+GetData ===>> L2(CDD),0.0498468697838842,H2,18.297127496491,H1,0.162852255720885,AX,-0.125411779708984,L1,-0.62...
+check iteration duration=7.20024108887e-05
+GetData ===>> L2(CDD),0.0584954416787425,H2,18.3337083249577,H1,0.351251239643966,AX,-0.144787909939323,L1,-0.3...
+check iteration duration=8.79764556885e-05
+GetData ===>> L2(CDD),0.0559794916196064,H2,18.2163251325208,H1,0.517955818791049,AX,0.0903890065125079,L1,-0.3...
+check iteration duration=9.51290130615e-05
+GetData ===>> L2(CDD),0.0520483227264531,H2,18.3775835821589,H1,0.361942462023301,AX,-0.146966267048835,L1,-0.5...
+check iteration duration=7.58171081543e-05
+GetData ===>> L2(CDD),0.0540925300830077,H2,18.457458023698,H1,0.394016840018097,AX,0.0712378835366048,L1,-0.34...
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.0533062963643623,H2,18.5339270924615,H1,0.454029830507868,AX,-0.498878161329135,L1,-0.4...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00939702987671
+04:22:20 -- collecting point 325
+GetData ===>> L2(CDD),0.0547215171658975,H2,18.220559153341,H1,0.370334579791023,AX,0.0742194704512783,L1,-0.57...
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0.0559794916196064,H2,18.3171232797914,H1,0.202621033829936,AX,0.0426839228176647,L1,-0.4...
+check iteration duration=9.29832458496e-05
+GetData ===>> L2(CDD),0.053778036577554,H2,18.4893390232904,H1,0.242966180447099,AX,-0.130685794626876,L1,-0.56...
+check iteration duration=7.48634338379e-05
+GetData ===>> L2(CDD),0.0501613629894118,H2,18.6233445914785,H1,0.459548453826146,AX,-0.200047866216841,L1,-0.5...
+check iteration duration=8.41617584229e-05
+GetData ===>> L2(CDD),0.0520483227264531,H2,18.4859273542223,H1,0.045739279273153,AX,0.0852284867659893,L1,-0.6...
+check iteration duration=8.70227813721e-05
+GetData ===>> L2(CDD),0.0528345562051574,H2,18.3626446027463,H1,0.495305298893696,AX,-0.108328359033239,L1,-0.4...
+check iteration duration=8.08238983154e-05
+GetData ===>> L2(CDD),0.0506331028426921,H2,18.4424001973154,H1,0.069413572481948,AX,-0.271812284446725,L1,-0.5...
+check iteration duration=7.60555267334e-05
+GetData ===>> L2(CDD),0.0534635430960944,H2,18.6345223482188,H1,0.239632756811903,AX,-0.0845945128992387,L1,-0....
+check iteration duration=6.79492950439e-05
+GetData ===>> L2(CDD),0.0561367384533135,H2,18.4746336372729,H1,0.292968917162016,AX,0.265977842413093,L1,-0.47...
+check iteration duration=8.08238983154e-05
+GetData ===>> L2(CDD),0.0529918029188939,H2,18.3888761890511,H1,0.55233503503483,AX,-0.111194725956449,L1,-0.26...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.015184879303
+GetData ===>> L2(CDD),0.0482744041161572,H2,18.6189911836167,H1,0.279634600631876,AX,-0.036437084368867,L1,-0.5...
+check iteration duration=9.51290130615e-05
+GetData ===>> L2(CDD),0.0580237009256831,H2,18.4656928696345,H1,0.305498744614883,AX,-0.232491548807484,L1,-0.4...
+check iteration duration=9.79900360107e-05
+GetData ===>> L2(CDD),0.0564512321387231,H2,18.5458097409249,H1,0.346078110056692,AX,-0.363630835911405,L1,-0.6...
+check iteration duration=9.29832458496e-05
+GetData ===>> L2(CDD),0.0551932575410494,H2,18.2691340802263,H1,0.200781979035864,AX,-0.209563264575583,L1,-0.5...
+check iteration duration=8.58306884766e-05
+GetData ===>> L2(CDD),0.0544070236124556,H2,18.599812885612,H1,0.25342630870053,AX,-0.217473584361031,L1,-0.532...
+check iteration duration=8.41617584229e-05
+GetData ===>> L2(CDD),0.0474881715072381,H2,18.3338259503859,H1,0.534397899816898,AX,0.0094293737574503,L1,-0.4...
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.0553505043447637,H2,18.2125615737033,H1,0.394706623299869,AX,0.115045204997577,L1,-0.57...
+check iteration duration=6.60419464111e-05
+GetData ===>> L2(CDD),0.0545642703861773,H2,18.5520452473269,H1,0.212276129016762,AX,-0.0127014651929499,L1,-0....
+check iteration duration=7.5101852417e-05
+GetData ===>> L2(CDD),0.0528345562051574,H2,18.5353388847935,H1,0.725859538371336,AX,-0.146393015656283,L1,-0.5...
+check iteration duration=0.000120878219604
+GetData ===>> L2(CDD),0.0569229727118265,H2,18.5661635205415,H1,0.430346097182988,AX,-0.130112533536143,L1,-0.5...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00649189949036
+GetData ===>> L2(CDD),0.0566084789904257,H2,18.4826333401012,H1,0.229977387833172,AX,0.244414587961966,L1,-0.52...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0.0498468697838842,H2,18.7188890779177,H1,0.290784835453634,AX,-0.0849384858639855,L1,-0....
+check iteration duration=8.17775726318e-05
+GetData ===>> L2(CDD),0.0567657258481268,H2,18.7837281018421,H1,0.431380811251768,AX,-0.0621213461366312,L1,-0....
+check iteration duration=8.6784362793e-05
+GetData ===>> L2(CDD),0.0569229727118265,H2,18.7294795531784,H1,0.223770415946636,AX,-0.080122853171614,L1,-0.4...
+check iteration duration=7.5101852417e-05
+GetData ===>> L2(CDD),0.0518910760487078,H2,18.4595755489507,H1,0.420918753450363,AX,-0.232147628579708,L1,-0.3...
+check iteration duration=0.000118017196655
+04:22:46 -- collecting point 350
+GetData ===>> L2(CDD),0.0547215171658975,H2,18.5767523579295,H1,0.478403988329122,AX,-0.0748485611452536,L1,-0....
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0.0522055694101969,H2,18.774078467475,H1,0.244460477539651,AX,0.00381061514973178,L1,-0.3...
+check iteration duration=7.48634338379e-05
+GetData ===>> L2(CDD),0.0529918029188939,H2,18.5082798831971,H1,0.418849348863075,AX,-0.0434315271418593,L1,-0....
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0.0577092071203028,H2,18.7553678597556,H1,0.0992945778316439,AX,-0.153042710819952,L1,-0....
+check iteration duration=8.08238983154e-05
+GetData ===>> L2(CDD),0.0492178834448112,H2,18.6258154531279,H1,0.473805043498246,AX,0.129839227279053,L1,-0.35...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0202329158783
+GetData ===>> L2(CDD),0.0570802195815247,H2,18.6284039814866,H1,0.393671948561455,AX,0.228701244044181,L1,-0.68...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0536207898338249,H2,18.7343041406762,H1,0.315959550891491,AX,-0.226759528965348,L1,-0.5...
+check iteration duration=0.000126123428345
+GetData ===>> L2(CDD),0.0616403814121361,H2,18.5293387813243,H1,0.433795148393309,AX,-0.13114440325385,L1,-0.49...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0528345562051574,H2,18.5161622114664,H1,0.521290204182591,AX,-0.0990412715580302,L1,-0....
+check iteration duration=0.000128984451294
+GetData ===>> L2(CDD),0.0561367384533135,H2,18.696414112261,H1,0.280784103418287,AX,-0.214148965126719,L1,-0.51...
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0.0567657258481268,H2,18.6380521924245,H1,0.540951814409958,AX,-0.0279519544050774,L1,-0....
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.051733829376961,H2,18.7070043464854,H1,0.360103103498704,AX,0.0768570358055757,L1,-0.68...
+check iteration duration=0.000130176544189
+GetData ===>> L2(CDD),0.0559794916196064,H2,18.682529310571,H1,0.433680179821141,AX,-0.256107110445829,L1,-0.50...
+check iteration duration=7.58171081543e-05
+GetData ===>> L2(CDD),0.0570802195815247,H2,18.7085340563722,H1,0.417584714911075,AX,-0.168405623938208,L1,-0.6...
+check iteration duration=8.51154327393e-05
+GetData ===>> L2(CDD),0.0573947133389167,H2,18.510985749988,H1,0.380106315750961,AX,0.0481882348754389,L1,-0.30...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0161240100861
+GetData ===>> L2(CDD),0.0526773094974195,H2,18.3130064677705,H1,0.198598106021604,AX,0.0276618980198419,L1,-0.4...
+check iteration duration=7.41481781006e-05
+GetData ===>> L2(CDD),0.0600679112455123,H2,18.6436999693998,H1,0.40022490730984,AX,-0.0380423708113426,L1,-0.6...
+check iteration duration=7.48634338379e-05
+GetData ===>> L2(CDD),0.0528345562051574,H2,18.7611339840906,H1,0.121476076514278,AX,-0.172188990278497,L1,-0.5...
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.0526773094974195,H2,18.6912367057527,H1,0.236184399654867,AX,-0.0770270765733949,L1,-0....
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0.059124429433468,H2,18.6691153655418,H1,0.462767665339136,AX,-0.204977542172818,L1,-0.45...
+check iteration duration=0.000109195709229
+GetData ===>> L2(CDD),0.0542497768447324,H2,18.6211090553142,H1,0.266990160373946,AX,-0.0839065666008567,L1,-0....
+check iteration duration=7.91549682617e-05
+GetData ===>> L2(CDD),0.0536207898338249,H2,18.6040485512822,H1,0.434255022819523,AX,-0.239943123558586,L1,-0.4...
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0.05975341728417,H2,18.6362872687443,H1,0.566822964603542,AX,-0.0149947872790228,L1,-0.66...
+check iteration duration=8.89301300049e-05
+GetData ===>> L2(CDD),0.0553505043447637,H2,18.6997088396263,H1,0.316189459995993,AX,-0.271468378272196,L1,-0.6...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0.0545642703861773,H2,18.5414566748903,H1,0.28204855806527,AX,0.0916504711037832,L1,-0.57...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0109488964081
+04:23:13 -- collecting point 375
+GetData ===>> L2(CDD),0.0528345562051574,H2,18.8649299798097,H1,0.438853779137667,AX,0.239941420144666,L1,-0.50...
+check iteration duration=9.29832458496e-05
+GetData ===>> L2(CDD),0.0493751300205817,H2,18.4580462247014,H1,0.542676536175595,AX,-0.112570579047504,L1,-0.4...
+check iteration duration=7.79628753662e-05
+GetData ===>> L2(CDD),0.0545642703861773,H2,18.75160224571,H1,0.277680449037413,AX,0.0726139994264125,L1,-0.470...
+check iteration duration=9.70363616943e-05
+GetData ===>> L2(CDD),0.055664997970188,H2,18.544044982111,H1,0.457478966382928,AX,-0.0415969241196011,L1,-0.00...
+check iteration duration=8.48770141602e-05
+GetData ===>> L2(CDD),0.0536207898338249,H2,18.6894716870119,H1,0.250092848922822,AX,-0.28786110256951,L1,-0.13...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.0592816763871457,H2,18.6794699737346,H1,0.43253049485143,AX,-0.05730559926788,L1,-0.423...
+check iteration duration=7.9870223999e-05
+GetData ===>> L2(CDD),0.0559794916196064,H2,18.5482804085624,H1,0.377807074856008,AX,-0.151208316743192,L1,-0.7...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0.0559794916196064,H2,18.6498184309092,H1,0.482658031815224,AX,-0.210938977035642,L1,-0.5...
+check iteration duration=6.48498535156e-05
+GetData ===>> L2(CDD),0.0551932575410494,H2,18.6208737360123,H1,0.0957317939772468,AX,-0.276741592779089,L1,-0....
+check iteration duration=5.00679016113e-05
+GetData ===>> L2(CDD),0.0518910760487078,H2,18.6131082305126,H1,0.611437955365085,AX,-0.103627498796453,L1,-0.3...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00693607330322
+GetData ===>> L2(CDD),0.0573947133389167,H2,18.6892363514177,H1,0.241586831338918,AX,0.0522018155967461,L1,-0.4...
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0.0520483227264531,H2,18.6751163184247,H1,0.203885386034322,AX,-0.20096501714414,L1,-0.72...
+check iteration duration=8.08238983154e-05
+GetData ===>> L2(CDD),0.0544070236124556,H2,18.731362316227,H1,0.325041002162602,AX,0.0207816596072904,L1,-0.29...
+check iteration duration=9.01222229004e-05
+GetData ===>> L2(CDD),0.0544070236124556,H2,18.6531130028098,H1,0.19710387996507,AX,-0.00134944038974809,L1,-0....
+check iteration duration=7.41481781006e-05
+GetData ===>> L2(CDD),0.0485888972017145,H2,18.8515135569127,H1,0.384474888546054,AX,0.0534632301373549,L1,-0.4...
+check iteration duration=7.70092010498e-05
+GetData ===>> L2(CDD),0.0539352833272816,H2,18.5822821292548,H1,0.232736054823773,AX,-0.116239511006899,L1,-0.4...
+check iteration duration=7.89165496826e-05
+GetData ===>> L2(CDD),0.0522055694101969,H2,18.7911419093709,H1,0.32734011731063,AX,0.0249097967524319,L1,-0.40...
+check iteration duration=9.48905944824e-05
+GetData ===>> L2(CDD),0.05975341728417,H2,18.8389211152792,H1,0.411721433702609,AX,-0.223893506240254,L1,-0.412...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0.055664997970188,H2,18.7764320281382,H1,0.356194478276941,AX,-0.272844002233603,L1,-0.57...
+check iteration duration=9.08374786377e-05
+GetData ===>> L2(CDD),0.0520483227264531,H2,18.7411292071505,H1,0.32538586908562,AX,-0.0118988011717141,L1,-0.6...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0140759944916
+GetData ===>> L2(CDD),0.0484316506559366,H2,18.9341333715539,H1,0.333662712218459,AX,-0.140316529897258,L1,-0.3...
+check iteration duration=9.3936920166e-05
+GetData ===>> L2(CDD),0.0536207898338249,H2,18.7446594324571,H1,0.381255938252868,AX,-0.0992705834392914,L1,-0....
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0.053778036577554,H2,18.9523765698996,H1,0.482887980645789,AX,0.0948614793416706,L1,-0.41...
+check iteration duration=9.08374786377e-05
+GetData ===>> L2(CDD),0.0569229727118265,H2,18.750896194675,H1,0.193310854986009,AX,-0.0766831007810719,L1,-0.3...
+check iteration duration=9.29832458496e-05
+GetData ===>> L2(CDD),0.0553505043447637,H2,18.8092647843176,H1,0.367115676674867,AX,-0.00972013831121875,L1,-0...
+check iteration duration=8.48770141602e-05
+04:23:39 -- collecting point 400
+GetData ===>> L2(CDD),0.0564512321387231,H2,18.7268907598486,H1,0.507262867504458,AX,-0.238567452562808,L1,-0.2...
+check iteration duration=3.19480895996e-05
+waiting for write to finish
+measurement finished
+estimated time: 419.430 actual time: :420.926
+flush and close file /Users/obama/PychronDev/data/isotopes/83/3fdba0-cbb5-4ca9-861b-58a6a50b0c5f.h5
+baselines () {'settling_time': 15.0, 'detector': 'H2', 'mass': 39.862, 'ncounts': 120}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Baseline
+build tables- baseline [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2(CDD))]
+add group baseline table H2
+add group baseline table H1
+add group baseline table AX
+add group baseline table L1
+add group baseline table L2(CDD)
+flush and close file /Users/obama/PychronDev/data/isotopes/83/3fdba0-cbb5-4ca9-861b-58a6a50b0c5f.h5
+detector Detector(H2)
+POSITION 39.862 H2
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [ -2.38925034e-04   8.80081338e-02   3.56995459e-01]
+H2 map mass to dac 39.862 >> 3.48552881693
+GetHighVoltage ===>> 9000
+positioning 39.862 (3.48552881693) on H2
+setting magnet DAC
+current  : 3.492450
+requested: 3.485529
+Delta Dac: 0.006921
+Checking detector protection. dv=0.00692
+SetMagnetDAC 3.48552881693 ===>> OK
+Magnet settling time: 0.500
+Delaying 15.0s for detectors to settle
+Join finished
+measuring baseline. ncounts=120
+"baseline" increment series count="2" fit count="1" regressing="True"
+starting measurement
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0,H2,-0.0484359189487751,H1,-0.0666482249908049,AX,-0.0763391248654297,L1,-0.770426462087...
+check iteration duration=8.79764556885e-05
+GetData ===>> L2(CDD),0,H2,0.109617658513184,H1,0.0727464079858865,AX,-0.381282836689743,L1,-0.303931776219645,...
+check iteration duration=7.58171081543e-05
+GetData ===>> L2(CDD),0,H2,-0.124190009935943,H1,-0.336072089977894,AX,-0.0426288887500494,L1,-0.49101795480627...
+check iteration duration=9.20295715332e-05
+GetData ===>> L2(CDD),0,H2,-0.0669670771301559,H1,0.15687558684516,AX,-0.0991559275055,L1,-0.632865616984525,L2...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0,H2,-0.173601824443166,H1,-0.0483775282295921,AX,0.102315646908496,L1,-0.624793543582407...
+check iteration duration=9.20295715332e-05
+GetData ===>> L2(CDD),0,H2,-0.0810691698006861,H1,0.179862977501311,AX,-0.227676654434201,L1,-0.45572579529989,...
+check iteration duration=7.79628753662e-05
+GetData ===>> L2(CDD),0,H2,-0.108573492813394,H1,-0.0542379780981763,AX,0.0635546059808911,L1,-0.60657347331969...
+check iteration duration=0.000107049942017
+GetData ===>> L2(CDD),0,H2,-0.0660347002007294,H1,-0.1528260908237,AX,-0.0834479354622711,L1,-0.473141368145121...
+check iteration duration=8.79764556885e-05
+GetData ===>> L2(CDD),0,H2,0.0579793519528351,H1,-0.199703616433996,AX,-0.143182801545464,L1,-0.480522708456164...
+check iteration duration=8.6784362793e-05
+GetData ===>> L2(CDD),0,H2,0.101807626796494,H1,-0.116057809802278,AX,-0.0762244662000243,L1,-0.407629506510893...
+check iteration duration=8.79764556885e-05
+GetData ===>> L2(CDD),0,H2,-0.123956929423569,H1,-0.0436661603600851,AX,-0.0378130443408131,L1,-0.3515718235668...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0,H2,0.10204076116879,H1,-0.14156595365301,AX,-0.184226875132039,L1,-0.534727702104149,L2...
+check iteration duration=8.01086425781e-05
+GetData ===>> L2(CDD),0,H2,-0.0658016058293008,H1,-0.271164479789698,AX,-0.105347328375932,L1,-0.66572979233504...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0,H2,0.194599496873322,H1,-0.00631913744564117,AX,0.0746781769504379,L1,-0.86842519740482...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0158669948578
+GetData ===>> L2(CDD),0,H2,-0.108107324290522,H1,0.0713673022431695,AX,-0.0358637671335382,L1,-0.36437540754588...
+check iteration duration=8.70227813721e-05
+GetData ===>> L2(CDD),0,H2,-0.19644229124892,H1,0.0826300568431514,AX,-0.157743329680244,L1,-0.443500106665977,...
+check iteration duration=8.79764556885e-05
+GetData ===>> L2(CDD),0,H2,-0.0839827999665125,H1,0.064816576887903,AX,-0.11039214407855,L1,-0.651431130357596,...
+check iteration duration=8.9168548584e-05
+GetData ===>> L2(CDD),0,H2,0.0500531715105707,H1,-0.19752064498605,AX,-0.0794349036769807,L1,-0.557677412488287...
+check iteration duration=9.10758972168e-05
+GetData ===>> L2(CDD),0,H2,-0.0600907763834321,H1,-0.0522844987647582,AX,-0.103398187953466,L1,-0.4626459279828...
+check iteration duration=5.10215759277e-05
+GetData ===>> L2(CDD),0,H2,-0.0994831665408507,H1,-0.261169468515834,AX,-0.0522605052733996,L1,-0.6160295019586...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0,H2,0.0304711187109362,H1,-0.0705551215225483,AX,-0.173908697333941,L1,-0.44961297028262...
+check iteration duration=5.79357147217e-05
+GetData ===>> L2(CDD),0,H2,-0.0051951844595393,H1,0.130555697184511,AX,-0.148342068999014,L1,-0.526424155261296...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0,H2,0.0111225706321541,H1,-0.0776794215194006,AX,-0.0856264314241627,L1,-0.5388794488165...
+check iteration duration=7.48634338379e-05
+GetData ===>> L2(CDD),0,H2,0.0436423372531112,H1,0.228368169065044,AX,-0.149029969236113,L1,-0.532536495272032,...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00522780418396
+04:24:21 -- collecting point 25
+GetData ===>> L2(CDD),0,H2,0.0735987778732544,H1,0.0113781106522869,AX,-0.204862898832748,L1,-0.680143552326611...
+check iteration duration=9.70363616943e-05
+GetData ===>> L2(CDD),0,H2,-0.0378298779909901,H1,-0.275759852512488,AX,0.0827055760712572,L1,-0.38986672372653...
+check iteration duration=8.01086425781e-05
+GetData ===>> L2(CDD),0,H2,-0.000999216293009508,H1,-0.0225221772796758,AX,-0.0837919088371554,L1,-0.5628669700...
+check iteration duration=8.89301300049e-05
+GetData ===>> L2(CDD),0,H2,0.0394461775812091,H1,0.0109184377633751,AX,0.0798386401274763,L1,-0.446268200632926...
+check iteration duration=8.01086425781e-05
+GetData ===>> L2(CDD),0,H2,-0.0808360790120196,H1,0.0734359615971143,AX,-0.25037523127145,L1,-0.855858855362466...
+check iteration duration=9.98973846436e-05
+GetData ===>> L2(CDD),0,H2,0.134446979552614,H1,-0.176724721894662,AX,-0.187207661454689,L1,-0.651200505046617,...
+check iteration duration=8.89301300049e-05
+GetData ===>> L2(CDD),0,H2,-0.0269906184057777,H1,0.0125272938329579,AX,-0.215753955156693,L1,-0.60426711085860...
+check iteration duration=7.41481781006e-05
+GetData ===>> L2(CDD),0,H2,0.0608934050276837,H1,-0.0370012591935147,AX,-0.143068150843436,L1,-0.59031350077613...
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0,H2,0.118243736163294,H1,-0.0152825548198423,AX,-0.0141921251706222,L1,-0.53714955651682...
+check iteration duration=7.91549682617e-05
+GetData ===>> L2(CDD),0,H2,-0.0940056214558229,H1,0.0806763042714189,AX,-0.100073174592409,L1,-0.68348751397142...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0167059898376
+GetData ===>> L2(CDD),0,H2,0.0016815505700442,H1,0.00678139162023699,AX,-0.161870683406988,L1,-0.32123472795233...
+check iteration duration=7.41481781006e-05
+GetData ===>> L2(CDD),0,H2,0.0839730120348933,H1,-0.068371857764007,AX,-0.152469463046399,L1,-0.550757959111977...
+check iteration duration=0.000101089477539
+GetData ===>> L2(CDD),0,H2,0.104838377969227,H1,-0.113989552356629,AX,-0.161297440892128,L1,-0.505203656398594,...
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0,H2,-0.0361981691743195,H1,-0.117896257141724,AX,0.0164242007189937,L1,-0.57186213728532...
+check iteration duration=8.89301300049e-05
+GetData ===>> L2(CDD),0,H2,-0.113934414857103,H1,0.161128212822307,AX,0.0417665405356303,L1,-0.490210632203401,...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0,H2,-0.088411501196563,H1,-0.096753901176615,AX,-0.0257733278846022,L1,-0.45561045933657...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0,H2,-0.0459883812429702,H1,-0.0953750357771129,AX,-0.0133894623926224,L1,-0.480061376335...
+check iteration duration=7.29560852051e-05
+GetData ===>> L2(CDD),0,H2,-0.111137415717741,H1,-0.0134439118924693,AX,-0.0490499771425922,L1,-0.7013602165389...
+check iteration duration=6.19888305664e-05
+GetData ===>> L2(CDD),0,H2,-0.0771066188453577,H1,-0.0828502514644611,AX,-0.143068150843436,L1,-0.4914792817052...
+check iteration duration=7.79628753662e-05
+GetData ===>> L2(CDD),0,H2,-0.126287732045116,H1,-0.142485153451532,AX,-0.128163443272274,L1,-0.539225426905055...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0271360874176
+GetData ===>> L2(CDD),0,H2,-0.174067961750768,H1,0.175380393330778,AX,0.207368209562329,L1,-0.566326659655157,L...
+check iteration duration=7.89165496826e-05
+GetData ===>> L2(CDD),0,H2,-0.0367809226358588,H1,0.127912254499903,AX,-0.186749079544571,L1,-0.45434176282745,...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0,H2,0.00529476970638488,H1,0.0912496007224824,AX,0.00312260614605006,L1,-0.6765689598627...
+check iteration duration=9.29832458496e-05
+GetData ===>> L2(CDD),0,H2,-0.101231312770208,H1,-0.206826962581581,AX,0.0230750669461801,L1,-0.534727702104149...
+check iteration duration=9.29832458496e-05
+GetData ===>> L2(CDD),0,H2,0.12244023387595,H1,-0.213375798913827,AX,0.0825908984696391,L1,-0.387213812610489,L...
+check iteration duration=9.10758972168e-05
+04:24:48 -- collecting point 50
+GetData ===>> L2(CDD),0,H2,0.0288392986729072,H1,-0.000458396435770312,AX,-0.208531478940551,L1,-0.343266705579...
+check iteration duration=8.01086425781e-05
+GetData ===>> L2(CDD),0,H2,-0.0233775051842835,H1,-0.265305347811981,AX,-0.020498737990062,L1,-0.67829860302598...
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0,H2,-0.145167028571887,H1,0.00172502598536177,AX,-0.0293279265080315,L1,-0.4942472384837...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0,H2,0.0958627190792084,H1,-0.137544444234792,AX,-0.101334387909176,L1,-0.574975829541632...
+check iteration duration=8.79764556885e-05
+GetData ===>> L2(CDD),0,H2,0.0525009556748574,H1,-0.209814156599186,AX,-0.184341520930582,L1,-0.479484710875675...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0163681507111
+GetData ===>> L2(CDD),0,H2,-0.155422296163539,H1,-0.133408017055333,AX,-0.285109895615137,L1,-0.369681347676516...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0,H2,-0.103445626841781,H1,0.00609188565500447,AX,0.0530045337495058,L1,-0.61810520319871...
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0,H2,-0.00740971595700106,H1,-0.0518248559935708,AX,-0.105691293922939,L1,-0.571054882102...
+check iteration duration=7.5101852417e-05
+GetData ===>> L2(CDD),0,H2,0.138643546778998,H1,-0.0228669198506701,AX,0.0590822786310671,L1,-0.522618339154599...
+check iteration duration=7.20024108887e-05
+GetData ===>> L2(CDD),0,H2,0.103089866531198,H1,-0.514574210582323,AX,-0.171271811925417,L1,-0.72003972072031,L...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0,H2,-0.375884543426025,H1,-0.277253343933152,AX,-0.127934138275723,L1,-0.706894922025354...
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0,H2,-0.0959868647088864,H1,0.108144130143702,AX,-0.151552265899233,L1,-0.342228560822295...
+check iteration duration=6.31809234619e-05
+GetData ===>> L2(CDD),0,H2,-0.00682694499636153,H1,-0.129386473623696,AX,-0.124265250901842,L1,-0.3896360360917...
+check iteration duration=7.41481781006e-05
+GetData ===>> L2(CDD),0,H2,0.0840895770883518,H1,-0.0305661385081689,AX,-0.180787494825541,L1,-0.51466067530810...
+check iteration duration=8.39233398438e-05
+GetData ===>> L2(CDD),0,H2,-0.213222702473344,H1,-0.00471031012587619,AX,-0.0898687515126173,L1,-0.453649745849...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00638294219971
+GetData ===>> L2(CDD),0,H2,0.0656724708633702,H1,-0.377886360681287,AX,-0.237421058564163,L1,-0.569786336883248...
+check iteration duration=9.79900360107e-05
+GetData ===>> L2(CDD),0,H2,-0.0541468164440348,H1,-0.121802946103237,AX,0.129036445040974,L1,-0.336807120111843...
+check iteration duration=7.9870223999e-05
+GetData ===>> L2(CDD),0,H2,0.133281269629221,H1,0.0657359742541206,AX,-0.166341963301127,L1,-0.449382296884566,...
+check iteration duration=9.10758972168e-05
+GetData ===>> L2(CDD),0,H2,-0.00822559471860034,H1,0.0604494513649273,AX,-0.0899834085528609,L1,-0.527577429915...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0,H2,-0.175349838200502,H1,-0.050216104570231,AX,-0.189271277346174,L1,-0.581433825997231...
+check iteration duration=7.9870223999e-05
+GetData ===>> L2(CDD),0,H2,0.0105397889770284,H1,-0.00103298046212894,AX,-0.0797788784857431,L1,-0.505318986454...
+check iteration duration=7.89165496826e-05
+GetData ===>> L2(CDD),0,H2,-0.198772921135553,H1,-0.0879061472753912,AX,-0.0371250646005165,L1,-0.6386313424877...
+check iteration duration=8.70227813721e-05
+GetData ===>> L2(CDD),0,H2,-0.168590834356681,H1,0.0217208085643094,AX,-0.169781395237502,L1,-0.482368034740204...
+check iteration duration=0.000101804733276
+GetData ===>> L2(CDD),0,H2,0.0735987778732544,H1,0.00413828809589825,AX,0.137293665749281,L1,-0.495515882695761...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0,H2,-0.0264078591112779,H1,0.057231582051693,AX,0.17192889101063,L1,-0.501282426340801,L...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00690102577209
+04:25:14 -- collecting point 75
+GetData ===>> L2(CDD),0,H2,-0.143418960869687,H1,0.0172389591868961,AX,-0.152354813451038,L1,-0.549720036839642...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0,H2,-0.15961760191289,H1,-0.0695209445686458,AX,-0.192137403187614,L1,-0.4651832975724,L...
+check iteration duration=7.9870223999e-05
+GetData ===>> L2(CDD),0,H2,-0.100182425407402,H1,0.0846987403502339,AX,-0.124494556772527,L1,-0.553064449066142...
+check iteration duration=7.9870223999e-05
+GetData ===>> L2(CDD),0,H2,-0.00251442909643341,H1,0.0210312919201936,AX,-0.0513432126144226,L1,-0.473026034255...
+check iteration duration=8.01086425781e-05
+GetData ===>> L2(CDD),0,H2,-0.148896229228656,H1,-0.0507906589581147,AX,-0.129309967435181,L1,-0.33842202051958...
+check iteration duration=9.01222229004e-05
+GetData ===>> L2(CDD),0,H2,-0.0610231589785408,H1,0.180322730901538,AX,-0.222632453537092,L1,-0.458032511690958...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0,H2,-0.0889942235497799,H1,-0.0449301881443856,AX,-0.282244046673357,L1,-0.4912486182832...
+check iteration duration=7.82012939453e-05
+GetData ===>> L2(CDD),0,H2,-0.049834509173292,H1,-0.152596293419639,AX,0.107590938840879,L1,-0.44419213089962,L...
+check iteration duration=7.20024108887e-05
+GetData ===>> L2(CDD),0,H2,-0.0557784953185386,H1,-0.21624808152276,AX,-0.0303599042945107,L1,-0.51466067530810...
+check iteration duration=7.20024108887e-05
+GetData ===>> L2(CDD),0,H2,-0.233265594117024,H1,-0.211077966668038,AX,-0.0371250646005165,L1,-0.68291096968423...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00631499290466
+GetData ===>> L2(CDD),0,H2,0.0974946509332173,H1,-0.192005747742577,AX,-0.0162561120974061,L1,-0.43404239255903...
+check iteration duration=8.70227813721e-05
+GetData ===>> L2(CDD),0,H2,-0.0310699237440127,H1,-0.034817919487131,AX,-0.137220946928392,L1,-0.44050132927023...
+check iteration duration=8.89301300049e-05
+GetData ===>> L2(CDD),0,H2,-0.0593914888534777,H1,-0.0975582384160473,AX,-0.0495086246742815,L1,-0.491479281705...
+check iteration duration=9.58442687988e-05
+GetData ===>> L2(CDD),0,H2,-0.194927378844268,H1,0.0703329742293229,AX,0.233633141885521,L1,-0.411551115932319,...
+check iteration duration=7.79628753662e-05
+GetData ===>> L2(CDD),0,H2,0.0188153210211221,H1,0.0750449219395242,AX,-0.288090369460462,L1,-0.595041606061829...
+check iteration duration=8.70227813721e-05
+GetData ===>> L2(CDD),0,H2,0.109967362884538,H1,-0.140187152312882,AX,-0.295656146223813,L1,-0.632058412673308,...
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0,H2,-0.0332843966598619,H1,0.00356370133179845,AX,-0.054095087968098,L1,-0.6759924114550...
+check iteration duration=8.60691070557e-05
+GetData ===>> L2(CDD),0,H2,-0.190499159898987,H1,-0.0457345685995954,AX,0.0875220476816014,L1,-0.47268003250673...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0,H2,-0.092140918257909,H1,-0.14271495326405,AX,-0.14868601917901,L1,-0.609687053925478,L...
+check iteration duration=8.60691070557e-05
+GetData ===>> L2(CDD),0,H2,-0.117430652533037,H1,-0.0545827093342921,AX,0.21264407730852,L1,-0.523079650994466,...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.0196850299835
+GetData ===>> L2(CDD),0.000157244698251559,H2,0.0367653072153413,H1,-0.156273045310513,AX,0.0450920554696234,L1...
+check iteration duration=5.19752502441e-05
+GetData ===>> L2(CDD),0,H2,0.0613596543252962,H1,0.198827987158683,AX,-0.0701475373670493,L1,-0.289050990393666...
+check iteration duration=8.41617584229e-05
+GetData ===>> L2(CDD),0,H2,-0.106009563188292,H1,0.0348217184502276,AX,-0.32190663767334,L1,-0.330001438796461,...
+check iteration duration=8.29696655273e-05
+GetData ===>> L2(CDD),0,H2,0.020330566866591,H1,0.183311133344065,AX,-0.182965770446567,L1,-0.570362948552784,L...
+check iteration duration=7.39097595215e-05
+GetData ===>> L2(CDD),0,H2,-0.183973327013932,H1,0.103087233167222,AX,-0.060172118164236,L1,-0.436695175351618,...
+check iteration duration=9.48905944824e-05
+04:25:40 -- collecting point 100
+GetData ===>> L2(CDD),0,H2,-0.0484359189487751,H1,0.131130359595878,AX,-0.281785510050412,L1,-0.577512904716153...
+check iteration duration=8.60691070557e-05
+GetData ===>> L2(CDD),0,H2,-0.133629723997977,H1,-0.00804287802444716,AX,-0.155564996965471,L1,-0.5686331125145...
+check iteration duration=6.29425048828e-05
+GetData ===>> L2(CDD),0,H2,-0.171737272991527,H1,-0.0327494878383159,AX,-0.0829893041054727,L1,-0.5233103068323...
+check iteration duration=9.3936920166e-05
+GetData ===>> L2(CDD),0,H2,-0.0431911877941449,H1,-0.165349966530406,AX,-0.0730140180129011,L1,-0.4718726946108...
+check iteration duration=8.10623168945e-05
+GetData ===>> L2(CDD),0,H2,-0.0478531724312468,H1,0.0498764925009873,AX,-0.175743048139806,L1,-0.45791717600185...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00769281387329
+GetData ===>> L2(CDD),0,H2,0.121624246799672,H1,-0.152596293419639,AX,0.0166535401681627,L1,-0.649124874773676,...
+check iteration duration=7.89165496826e-05
+GetData ===>> L2(CDD),0,H2,0.0113556833913481,H1,-0.0591791140466982,AX,-0.244070124745544,L1,-0.41224316300485...
+check iteration duration=8.79764556885e-05
+GetData ===>> L2(CDD),0,H2,-0.188751173217218,H1,-0.148804628352849,AX,-0.0758804901208828,L1,-0.62871427335611...
+check iteration duration=8.39233398438e-05
+GetData ===>> L2(CDD),0,H2,-0.00822559471860034,H1,0.0209163725273183,AX,-0.0477886953037972,L1,-0.431620280182...
+check iteration duration=7.60555267334e-05
+GetData ===>> L2(CDD),0,H2,0.0477219541918849,H1,-0.0176957683438809,AX,-0.200047866216841,L1,-0.66042547463258...
+check iteration duration=7.20024108887e-05
+GetData ===>> L2(CDD),0,H2,0.0551818691686951,H1,0.0364306143876984,AX,-0.0698035591158247,L1,-0.80997302823164...
+check iteration duration=8.39233398438e-05
+GetData ===>> L2(CDD),0,H2,-0.284885801673937,H1,-0.233481597552768,AX,-0.098926615596882,L1,-0.393557718402564...
+check iteration duration=8.70227813721e-05
+GetData ===>> L2(CDD),0,H2,-0.314831264735798,H1,-0.0957197523116077,AX,-0.212773257255755,L1,-0.42135506998708...
+check iteration duration=6.89029693604e-05
+GetData ===>> L2(CDD),0,H2,-0.0569439785621516,H1,0.0298801262777724,AX,-0.456128307366552,L1,-0.35341739566622...
+check iteration duration=7.5101852417e-05
+GetData ===>> L2(CDD),0,H2,0.0850220980193712,H1,-0.132603709710389,AX,0.0752515603809754,L1,-0.531267899575793...
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+check iteration duration=0.00587105751038
+GetData ===>> L2(CDD),0,H2,-0.00566140203373044,H1,-0.0344731811871759,AX,-0.0773710522426126,L1,-0.72984055094...
+check iteration duration=8.20159912109e-05
+GetData ===>> L2(CDD),0,H2,-0.175466372339921,H1,-0.0869868954623568,AX,-0.176545575517506,L1,-0.34338205492869...
+check iteration duration=8.60691070557e-05
+GetData ===>> L2(CDD),0,H2,-0.293391804649909,H1,0.00620680328170568,AX,-0.300814596274619,L1,-0.47590937735714...
+check iteration duration=7.5101852417e-05
+GetData ===>> L2(CDD),0,H2,-0.0521654884374896,H1,-0.1685670826623,AX,0.0924532221588029,L1,-0.619950267230573,...
+check iteration duration=8.89301300049e-05
+GetData ===>> L2(CDD),0,H2,-0.0940056214558229,H1,0.0705628248034928,AX,-0.230313385289496,L1,-0.66042547463258...
+check iteration duration=8.98838043213e-05
+GetData ===>> L2(CDD),0,H2,0.0481881972113334,H1,0.132624483468614,AX,-0.234440427775953,L1,-0.508663552083074,...
+check iteration duration=3.19480895996e-05
+waiting for write to finish
+measurement finished
+estimated time: 125.829 actual time: :126.345
+flush and close file /Users/obama/PychronDev/data/isotopes/83/3fdba0-cbb5-4ca9-861b-58a6a50b0c5f.h5
+activate_detectors ('H1', 'L2(CDD)') {'peak_center': True}
+peak_center () {'detector': 'H2', 'integration_time': 1.048576, 'isotope': 'Ar40'}
+peak center: mean=18.8065845373 threshold=100.0
+Skipping peak center. intensities to small. 18.8065845373<100.0
+finished measure script
+executed snippet estimated_duration=650.242112, duration=595.568743944
+felix_analysis400_120.py completed successfully
+Measurement Finished
+04:26:02 -- ******* Measurement Finished *******
+Post Measurement Started felix_pump_ms.py
+04:26:02 -- ******* Post Measurement Started felix_pump_ms.py *******
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=3.48091125488e-05
+Pumping spectrometer
+open () {'name': 'V'}
+open name=V desc=---
+checking ownership. requestor=129.138.12.137
+check software interlocks V
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open V ===>> OK
+GetIndicatorState V ===>> OK
+change switch state (True, True)
+update switch state V True args=() kw={} ncanvase=2
+04:26:03 -- OPEN   VALVE-V (Felix Ion Pump)
+-------------------------- open V () result=[(True, True)]
+action=open, ok=True, locked=[False]
+executed snippet estimated_duration=0, duration=0.369823932648
+felix_pump_ms.py completed successfully
+setting _ms_pumptime
+Post Measurement Finished
+04:26:03 -- ******* Post Measurement Finished *******
+$$$$$$$$$$$$$$$$$$$$ state at run end measurement
+state changed from measurement to success
+post measurement save measured=True aborted=False
+Set filtering
+setting fod for Ar40= {'filter_outliers': True, 'std_devs': 2, 'iterations': 2}
+setting fod for H2= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar36= {'filter_outliers': True, 'std_devs': 2, 'iterations': 2}
+setting fod for L2(CDD)= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar37= {'filter_outliers': True, 'std_devs': 2, 'iterations': 2}
+setting fod for L1= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar38= {'filter_outliers': True, 'std_devs': 2, 'iterations': 2}
+setting fod for AX= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar39= {'filter_outliers': True, 'std_devs': 2, 'iterations': 2}
+setting fod for H1= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+persistence save...
+persistence save - db
+post measurement save
+5646700720 connecting to database sqlite:////Users/obama/PychronDev/.appdata/local_lab.db
+connected to db sqlite:////Users/obama/PychronDev/.appdata/local_lab.db
+create new session 5646700720
+close session 5646700720
+No database instance. Not saving post measurement to isotopedb database
+$$$$$$$$$$$$$$$ auto_save_detector_ic=False
+massspec enabled True
+create new session 4709871888
+MassSpec Database Version: 16.0
+close session 4709871888
+saving post measurement to secondary database
+saving to massspec database 129.138.12.160/massspecdata
+setting labnumber to 65495
+setting aliquot to 8
+setting step to A
+setting uuid to 833fdba0-cbb5-4ca9-861b-58a6a50b0c5f
+setting irradpos to 65495
+setting extract_device to Fusions Diode
+setting tray to 
+setting position to 7
+setting power_requested to 0.5
+setting extract_value to 0.5
+setting duration to 40.0
+setting duration_at_request to 40.0
+setting first_stage_delay to 40.0
+setting cleanup to 60.0
+setting comment to 
+setting irradiation to NM-289
+setting level to E
+setting irradiation_level to E
+setting sample to CC-22B
+setting material to Biotite
+setting project to Belanger975
+setting mass_spectrometer to Felix
+no attribute chron_dosages
+no attribute production_ratios
+no attribute interference_corrections
+no attribute production_name
+no attribute j
+Reference Isotope=Ar40
+Reference Detector=H2
+%%%%%%%%%%%%%%%%%%%% Comment:  %%%%%%%%%%%%%%%%%%%
+adding isotope Ar40 H2
+add baseline dbdet= Ar40. original det= H2
+get baseline data Ar40 H2
+Get data baseline <pychron.processing.isotope.Baseline object at 0x12298a610> len t=120
+baseline Ar40. v=-0.0371554191927, e=0.00883261203895
+get signal data Ar40 H2
+Get data signal Ar40 16.368+/-0.020 len t=400
+adding isotope Ar39 H1
+add baseline dbdet= Ar39. original det= H1
+get baseline data Ar39 H1
+Get data baseline <pychron.processing.isotope.Baseline object at 0x12298af90> len t=120
+baseline Ar39. v=-0.0398485483396, e=0.0105992332772
+get signal data Ar39 H1
+Get data signal Ar39 0.338+/-0.024 len t=400
+adding isotope Ar38 AX
+add baseline dbdet= Ar38. original det= AX
+get baseline data Ar38 AX
+Get data baseline <pychron.processing.isotope.Baseline object at 0x12298a790> len t=120
+baseline Ar38. v=-0.0996047741753, e=0.00989990654944
+get signal data Ar38 AX
+Get data signal Ar38 0.007+/-0.013 len t=400
+adding isotope Ar37 L1
+add baseline dbdet= Ar37. original det= L1
+get baseline data Ar37 L1
+Get data baseline <pychron.processing.isotope.Baseline object at 0x12298aa50> len t=120
+baseline Ar37. v=-0.517776215828, e=0.00953715398437
+get signal data Ar37 L1
+Get data signal Ar37 0.023+/-0.012 len t=400
+adding isotope Ar36 L2(CDD)
+add baseline dbdet= Ar36. original det= L2(CDD)
+get baseline data Ar36 L2(CDD)
+Get data baseline <pychron.processing.isotope.Baseline object at 0x12298ad10> len t=120
+baseline Ar36. v=0.0, e=0.0
+get signal data Ar36 L2(CDD)
+Get data signal Ar36 0.0486+/-0.0005 len t=400
+65495-08A added analysis time 0.572376966476s
+analysis added to mass spec database
+mass spec save time= 0.587
+persistence save - dvc
+================= post measurement started
+create new session 4673147248
+close session 4673147248
+---------------- Experiment Queue saving disabled
+DVC saving peakcenter
+Smart pull ahead: 0 behind: 0
+Up-to-date with origin
+add to repo msg=modified - 1e2ad98a77a0f8b97e0df49be2474708cb221738.json
+add to repo msg=modified - 95-08A.json
+add to repo msg=modified - 95-08A.dat.json
+add to repo msg=modified - 95-08A.blan.json
+add to repo msg=modified - 95-08A.inte.json
+add to repo msg=modified - 95-08A.icfa.json
+add to repo msg=modified - 95-08A.base.json
+not at valid file /Users/obama/PychronDev/data/.dvc/repositories/Load1797/654/tags/95-08A.tags.json
+add to repo msg=modified - 95-08A.peak.json
+add to repo msg=modified - 95-08A.extr.json
+not at valid file /Users/obama/PychronDev/data/.dvc/repositories/Load1797/654/monitor/95-08A.moni.json
+commit message=<COLLECTION>
+add to repo msg=modified - 95-08A.inte.json
+add to repo msg=modified - 95-08A.base.json
+commit message=<ISOEVO> default collection fits
+add to repo msg=modified - 95-08A.blan.json
+commit message=<BLANKS> preceding bu-FD-F-566
+add to repo msg=modified - 95-08A.icfa.json
+commit message=<ICFactor> default
+push repository <pychron.git_archive.repo_manager.GitRepoManager object at 0x14db7e110>
+pushing to remote=origin, url=https://github.com
+no changes to meta repo
+create new session 4673147248
+add association Load1797
+get identifier "65495"
+setting analysis irradiation position=<pychron.dvc.dvc_orm.IrradiationPositionTbl object at 0x14e442150>
+close session 4673147248
+================= post measurement finished
+04:26:14 -- ******* Post Run Check *******
+loading queue conditionals post_run_actions
+loading system conditionals post_run_actions
+loading conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
+loading queue conditionals post_run_terminations
+loading system conditionals post_run_terminations
+loading conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
+Checking default post run terminations n=1
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+04:26:14 -- ******* Post Run Check Passed *******
+04:26:14 -- Automated run 65495-08A success duration: 737.354 s
+----------------- finish -----------------
+----------------- stop -----------------
+retroactive repository identifiers disabled
+finish run. runs completed=50
+update duration runid=65495-08A, duration=737.353750944, md5=0f1daef3
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_diode.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=624.242112, duration=0.000330924987793
+script duration name:analysis400_120 seconds:624.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_diode.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=3.40938568115e-05
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_diode.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=0.000127077102661
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=3.40938568115e-05
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=42.0, duration=0.000134944915771
+executed snippet estimated_duration=42.0, duration=0.00656414031982
+script duration name:diode seconds:42.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_diode.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=4.0, duration=0.000236034393311
+executed snippet estimated_duration=4.0, duration=0.00498604774475
+Script duration 666.0
+Run total estimated duration= 667.000
+analysis400_120 in script context. using previous estimated duration
+script duration name:analysis400_120 seconds:624.0
+pump_ms in script context. using previous estimated duration
+diode in script context. using previous estimated duration
+script duration name:diode seconds:42.0
+pump_extraction_line in script context. using previous estimated duration
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_air_x2.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=7.29560852051e-05
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=0.000176906585693
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=32.0, duration=0.000125169754028
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=34.0, duration=0.000164985656738
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=2.0, duration=0.000101089477539
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=34.0, duration=0.000117063522339
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=34.0, duration=0.000186920166016
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=34.0, duration=0.000118017196655
+executed snippet estimated_duration=174.0, duration=0.033401966095
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+air_x2 in script context. using previous estimated duration
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_cocktail_x3.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=8.29696655273e-05
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=0.000205993652344
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=32.0, duration=0.000155925750732
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=34.0, duration=0.000193119049072
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=2.0, duration=9.79900360107e-05
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=34.0, duration=0.000109910964966
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=34.0, duration=0.000164031982422
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=34.0, duration=0.000117063522339
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=34.0, duration=0.000164985656738
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=34.0, duration=0.000112056732178
+executed snippet estimated_duration=244.0, duration=0.0467848777771
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+cocktail_x3 in script context. using previous estimated duration
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:diode seconds:42.0
+Script duration 666.0
+Run total estimated duration= 667.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+nruns=76 before=5.0, run_dur=53224.0, btw=2250.0
+write rem/ex queues
+/Users/obama/PychronDev/experiments/rem/Load1797.rem.txt
+/Users/obama/PychronDev/experiments/rem/Load1797.ex.txt
+doing event level: 3
